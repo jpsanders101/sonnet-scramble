@@ -18,7 +18,7 @@ export const query = graphql`
       title
       lines {
         lineNumber
-        line
+        lineText
       }
     }
   }

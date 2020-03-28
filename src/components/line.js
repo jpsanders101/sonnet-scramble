@@ -17,6 +17,6 @@ export default ({ line, isSelected, registerClick }) => {
   `;
 
   return (
-    <p css={lineStyle} onClick={handleOnClick}>{line.line && line.line.line}</p>
+    <p css={lineStyle} onClick={handleOnClick}>{line.line && line.line.lineText}</p>
   )
 }
