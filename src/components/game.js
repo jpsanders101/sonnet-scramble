@@ -3,24 +3,9 @@ import { css } from "@emotion/core"
 import Line from "./line"
 
 export default ({ lines }) => {
-  // TODO map to create this array  
-  // TODO change name 'solved lines'  
-  const [solvedLines, setSolvedLines] = useState([
-    { setType: "solution", line: null, position: 0 },
-    { setType: "solution", line: null, position: 1 },
-    { setType: "solution", line: null, position: 2 },
-    { setType: "solution", line: null, position: 3 },
-    { setType: "solution", line: null, position: 4 },
-    { setType: "solution", line: null, position: 5 },
-    { setType: "solution", line: null, position: 6 },
-    { setType: "solution", line: null, position: 7 },
-    { setType: "solution", line: null, position: 8 },
-    { setType: "solution", line: null, position: 9 },
-    { setType: "solution", line: null, position: 10 },
-    { setType: "solution", line: null, position: 11 },
-    { setType: "solution", line: null, position: 12 },
-    { setType: "solution", line: null, position: 13 },
-  ]);
+  // TODO change name 'solved lines'
+  const initialSolutionLines = Array(14).fill({ setType: "solution", line: null }).map((lineNode, index) => ({ ...lineNode, position: index }));
+  const [solvedLines, setSolvedLines] = useState(initialSolutionLines);
 
   const mappedScrambledLines = lines.map((line, index) => ({
     line,
