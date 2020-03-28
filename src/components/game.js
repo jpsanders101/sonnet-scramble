@@ -61,7 +61,6 @@ export default ({ lines }) => {
 
   return (
     <main>
-      <h1>{`Sonnet Page`}</h1>
       <section css={puzzleSection}>
         <div>
           {solvedLines.map(solvedLine => (
@@ -69,6 +68,7 @@ export default ({ lines }) => {
               key={`solved-${solvedLine.position}`}
               line={solvedLine}
               registerClick={registerClick}
+              isSelected={selectedLine === solvedLine}
               setType="solution"
             />
           ))}
