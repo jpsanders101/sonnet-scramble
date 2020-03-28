@@ -6,20 +6,20 @@ export default ({ lines }) => {
   // TODO map to create this array  
   // TODO change name 'solved lines'  
   const [solvedLines, setSolvedLines] = useState([
-    { setType: "solution", lineText: null, position: 0 },
-    { setType: "solution", lineText: null, position: 1 },
-    { setType: "solution", lineText: null, position: 2 },
-    { setType: "solution", lineText: null, position: 3 },
-    { setType: "solution", lineText: null, position: 4 },
-    { setType: "solution", lineText: null, position: 5 },
-    { setType: "solution", lineText: null, position: 6 },
-    { setType: "solution", lineText: null, position: 7 },
-    { setType: "solution", lineText: null, position: 8 },
-    { setType: "solution", lineText: null, position: 9 },
-    { setType: "solution", lineText: null, position: 10 },
-    { setType: "solution", lineText: null, position: 11 },
-    { setType: "solution", lineText: null, position: 12 },
-    { setType: "solution", lineText: null, position: 13 },
+    { setType: "solution", line: null, position: 0 },
+    { setType: "solution", line: null, position: 1 },
+    { setType: "solution", line: null, position: 2 },
+    { setType: "solution", line: null, position: 3 },
+    { setType: "solution", line: null, position: 4 },
+    { setType: "solution", line: null, position: 5 },
+    { setType: "solution", line: null, position: 6 },
+    { setType: "solution", line: null, position: 7 },
+    { setType: "solution", line: null, position: 8 },
+    { setType: "solution", line: null, position: 9 },
+    { setType: "solution", line: null, position: 10 },
+    { setType: "solution", line: null, position: 11 },
+    { setType: "solution", line: null, position: 12 },
+    { setType: "solution", line: null, position: 13 },
   ]);
 
   const mappedScrambledLines = lines.map((line, index) => ({
@@ -31,6 +31,8 @@ export default ({ lines }) => {
   const [scrambledLines, setScrambledLines] = useState(mappedScrambledLines);
 
   const [selectedLine, setSelectedLine] = useState(null);
+
+  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false);
 
   const registerClick = (clickedLine) => {
     if (selectedLine) {
@@ -50,6 +52,13 @@ export default ({ lines }) => {
 
       setSolvedLines(newSolvedLines);
       setScrambledLines(newScrambledLines);
+
+      const isUnscrambled = newSolvedLines.every(lineNode => {
+        return !!lineNode.line && lineNode.position + 1 === lineNode.line.lineNumber;
+      })
+
+      setIsSonnetUnscrambled(isUnscrambled);
+
       setSelectedLine(null);
 
     } else {
@@ -61,6 +70,9 @@ export default ({ lines }) => {
 
   return (
     <main>
+      {isSonnetUnscrambled && (
+        <div>{`Correct!`}</div>
+      )}
       <section css={puzzleSection}>
         <div>
           {solvedLines.map(solvedLine => (
