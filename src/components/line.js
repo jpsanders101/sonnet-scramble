@@ -1,21 +1,24 @@
 import React from "react"
 import { css } from "@emotion/core"
 
-export default ({ line, isSelected, setSelectedLine }) => {
+export default ({ line, isSelected, registerClick }) => {
 
   const handleOnClick = () => {
-    const lineToSelect = isSelected ? null : line.lineNumber;
-    setSelectedLine(lineToSelect);
+    registerClick(line);
   };
 
   const lineStyle = css`
     color: red;
+    height: 20px;
     ${isSelected && `
       border: solid 2px blue;
+    `}
+    ${!line.line && `
+      background-color: lightblue;
     `}
   `;
 
   return (
-    <p css={lineStyle} onClick={handleOnClick}>{line.line}</p>
+    <p css={lineStyle} onClick={handleOnClick}>{line.line && line.line.line}</p>
   )
 }
