@@ -13,9 +13,7 @@ export default ({ line, isSelected, registerClick }) => {
     ${isSelected && `
       border: solid 2px blue;
     `}
-    ${!line.line && `
-      background-color: lightblue;
-    `}
+    ${line.setType === "scramble" ? `background-color: lightyellow;` : `background-color: lightblue;`}
   `;
 
   return (
