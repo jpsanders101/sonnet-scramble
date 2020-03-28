@@ -4,7 +4,8 @@ import { css } from "@emotion/core"
 export default ({ line, isSelected, setSelectedLine }) => {
 
   const handleOnClick = () => {
-    setSelectedLine(line.lineNumber);
+    const lineToSelect = isSelected ? null : line.lineNumber;
+    setSelectedLine(lineToSelect);
   };
 
   const lineStyle = css`
