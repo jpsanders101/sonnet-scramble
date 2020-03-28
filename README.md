@@ -8,7 +8,6 @@ A book of 154 Sonnets was first published in 1609.
 
 Here, they are all scrambled. Can you unscramble them?
 
-
 ## Start in development mode
 
 ```shell

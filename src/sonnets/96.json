@@ -1,1 +1,52 @@
-{"title":"96","lines":[{"lineNumber":1,"lineText":"Some say thy fault is youth, some wantonness;"},{"lineNumber":2,"lineText":"Some say thy grace is youth and gentle sport;"},{"lineNumber":3,"lineText":"Both grace and faults are lov'd of more and less:"},{"lineNumber":4,"lineText":"Thou mak'st faults graces that to thee resort."},{"lineNumber":5,"lineText":"As on the finger of a throned queen"},{"lineNumber":6,"lineText":"The basest jewel will be well esteem'd,"},{"lineNumber":7,"lineText":"So are those errors that in thee are seen"},{"lineNumber":8,"lineText":"To truths translated, and for true things deem'd."},{"lineNumber":9,"lineText":"How many lambs might the stern wolf betray,"},{"lineNumber":10,"lineText":"If like a lamb he could his looks translate!"},{"lineNumber":11,"lineText":"How many gazers mightst thou lead away,"},{"lineNumber":12,"lineText":"if thou wouldst use the strength of all thy state!"},{"lineNumber":13,"lineText":"But do not so; I love thee in such sort,"},{"lineNumber":14,"lineText":"As, thou being mine, mine is thy good report."}]}
+{
+  "title": "96",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Some say thy fault is youth, some wantonness;"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "Some say thy grace is youth and gentle sport;"
+    },
+    {
+      "lineNumber": 3,
+      "lineText": "Both grace and faults are lov'd of more and less:"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "Thou mak'st faults graces that to thee resort."
+    },
+    { "lineNumber": 5, "lineText": "As on the finger of a throned queen" },
+    { "lineNumber": 6, "lineText": "The basest jewel will be well esteem'd," },
+    {
+      "lineNumber": 7,
+      "lineText": "So are those errors that in thee are seen"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "To truths translated, and for true things deem'd."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "How many lambs might the stern wolf betray,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "If like a lamb he could his looks translate!"
+    },
+    { "lineNumber": 11, "lineText": "How many gazers mightst thou lead away," },
+    {
+      "lineNumber": 12,
+      "lineText": "if thou wouldst use the strength of all thy state!"
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "But do not so; I love thee in such sort,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "As, thou being mine, mine is thy good report."
+    }
+  ]
+}

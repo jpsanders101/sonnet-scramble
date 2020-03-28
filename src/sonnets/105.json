@@ -1,1 +1,43 @@
-{"title":"105","lines":[{"lineNumber":1,"lineText":"Let not my love be call'd idolatry,"},{"lineNumber":2,"lineText":"Nor my beloved as an idol show,"},{"lineNumber":3,"lineText":"Since all alike my songs and praises be"},{"lineNumber":4,"lineText":"To one, of one, still such, and ever so."},{"lineNumber":5,"lineText":"Kind is my love to-day, to-morrow kind,"},{"lineNumber":6,"lineText":"Still constant in a wondrous excellence;"},{"lineNumber":7,"lineText":"Therefore my verse to constancy confin'd,"},{"lineNumber":8,"lineText":"One thing expressing, leaves out difference."},{"lineNumber":9,"lineText":"'Fair, kind, and true,' is all my argument,"},{"lineNumber":10,"lineText":"'Fair, kind, and true,' varying to other words;"},{"lineNumber":11,"lineText":"And in this change is my invention spent,"},{"lineNumber":12,"lineText":"Three themes in one, which wondrous scope affords."},{"lineNumber":13,"lineText":"Fair, kind, and true, have often liv'd alone,"},{"lineNumber":14,"lineText":"Which three till now, never kept seat in one."}]}
+{
+  "title": "105",
+  "lines": [
+    { "lineNumber": 1, "lineText": "Let not my love be call'd idolatry," },
+    { "lineNumber": 2, "lineText": "Nor my beloved as an idol show," },
+    { "lineNumber": 3, "lineText": "Since all alike my songs and praises be" },
+    { "lineNumber": 4, "lineText": "To one, of one, still such, and ever so." },
+    { "lineNumber": 5, "lineText": "Kind is my love to-day, to-morrow kind," },
+    { "lineNumber": 6, "lineText": "Still constant in a wondrous excellence;" },
+    {
+      "lineNumber": 7,
+      "lineText": "Therefore my verse to constancy confin'd,"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "One thing expressing, leaves out difference."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "'Fair, kind, and true,' is all my argument,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "'Fair, kind, and true,' varying to other words;"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "And in this change is my invention spent,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "Three themes in one, which wondrous scope affords."
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "Fair, kind, and true, have often liv'd alone,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Which three till now, never kept seat in one."
+    }
+  ]
+}

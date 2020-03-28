@@ -1,1 +1,55 @@
-{"title":"69","lines":[{"lineNumber":1,"lineText":"Those parts of thee that the world's eye doth view"},{"lineNumber":2,"lineText":"Want nothing that the thought of hearts can mend;"},{"lineNumber":3,"lineText":"All tongues--the voice of souls--give thee that due,"},{"lineNumber":4,"lineText":"Uttering bare truth, even so as foes commend."},{"lineNumber":5,"lineText":"Thy outward thus with outward praise is crown'd;"},{"lineNumber":6,"lineText":"But those same tongues, that give thee so thine own,"},{"lineNumber":7,"lineText":"In other accents do this praise confound"},{"lineNumber":8,"lineText":"By seeing farther than the eye hath shown."},{"lineNumber":9,"lineText":"They look into the beauty of thy mind,"},{"lineNumber":10,"lineText":"And that in guess they measure by thy deeds;"},{"lineNumber":11,"lineText":"Then--churls--their thoughts, although their eyes were kind,"},{"lineNumber":12,"lineText":"To thy fair flower add the rank smell of weeds: "},{"lineNumber":13,"lineText":"But why thy odour matcheth not thy show,"},{"lineNumber":14,"lineText":"The soil is this, that thou dost common grow."}]}
+{
+  "title": "69",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Those parts of thee that the world's eye doth view"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "Want nothing that the thought of hearts can mend;"
+    },
+    {
+      "lineNumber": 3,
+      "lineText": "All tongues--the voice of souls--give thee that due,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "Uttering bare truth, even so as foes commend."
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "Thy outward thus with outward praise is crown'd;"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "But those same tongues, that give thee so thine own,"
+    },
+    { "lineNumber": 7, "lineText": "In other accents do this praise confound" },
+    {
+      "lineNumber": 8,
+      "lineText": "By seeing farther than the eye hath shown."
+    },
+    { "lineNumber": 9, "lineText": "They look into the beauty of thy mind," },
+    {
+      "lineNumber": 10,
+      "lineText": "And that in guess they measure by thy deeds;"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Then--churls--their thoughts, although their eyes were kind,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "To thy fair flower add the rank smell of weeds: "
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "But why thy odour matcheth not thy show,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "The soil is this, that thou dost common grow."
+    }
+  ]
+}

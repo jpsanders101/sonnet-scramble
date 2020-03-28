@@ -1,1 +1,40 @@
-{"title":"79","lines":[{"lineNumber":1,"lineText":"Whilst I alone did call upon thy aid,"},{"lineNumber":2,"lineText":"My verse alone had all thy gentle grace;"},{"lineNumber":3,"lineText":"But now my gracious numbers are decay'd,"},{"lineNumber":4,"lineText":"And my sick Muse doth give an other place."},{"lineNumber":5,"lineText":"I grant, sweet love, thy lovely argument"},{"lineNumber":6,"lineText":"Deserves the travail of a worthier pen;"},{"lineNumber":7,"lineText":"Yet what of thee thy poet doth invent"},{"lineNumber":8,"lineText":"He robs thee of, and pays it thee again."},{"lineNumber":9,"lineText":"He lends thee virtue, and he stole that word"},{"lineNumber":10,"lineText":"From thy behaviour; beauty doth he give,"},{"lineNumber":11,"lineText":"And found it in thy cheek: he can afford"},{"lineNumber":12,"lineText":"No praise to thee, but what in thee doth live. "},{"lineNumber":13,"lineText":"Then thank him not for that which he doth say,"},{"lineNumber":14,"lineText":"Since what he owes thee, thou thyself dost pay."}]}
+{
+  "title": "79",
+  "lines": [
+    { "lineNumber": 1, "lineText": "Whilst I alone did call upon thy aid," },
+    { "lineNumber": 2, "lineText": "My verse alone had all thy gentle grace;" },
+    { "lineNumber": 3, "lineText": "But now my gracious numbers are decay'd," },
+    {
+      "lineNumber": 4,
+      "lineText": "And my sick Muse doth give an other place."
+    },
+    { "lineNumber": 5, "lineText": "I grant, sweet love, thy lovely argument" },
+    { "lineNumber": 6, "lineText": "Deserves the travail of a worthier pen;" },
+    { "lineNumber": 7, "lineText": "Yet what of thee thy poet doth invent" },
+    { "lineNumber": 8, "lineText": "He robs thee of, and pays it thee again." },
+    {
+      "lineNumber": 9,
+      "lineText": "He lends thee virtue, and he stole that word"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "From thy behaviour; beauty doth he give,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "And found it in thy cheek: he can afford"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "No praise to thee, but what in thee doth live. "
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "Then thank him not for that which he doth say,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Since what he owes thee, thou thyself dost pay."
+    }
+  ]
+}

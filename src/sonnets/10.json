@@ -1,1 +1,52 @@
-{"title":"10","lines":[{"lineNumber":1,"lineText":"For shame! deny that thou bear'st love to any,"},{"lineNumber":2,"lineText":"Who for thy self art so unprovident."},{"lineNumber":3,"lineText":"Grant, if thou wilt, thou art belov'd of many,"},{"lineNumber":4,"lineText":"But that thou none lov'st is most evident:"},{"lineNumber":5,"lineText":"For thou art so possess'd with murderous hate,"},{"lineNumber":6,"lineText":"That 'gainst thy self thou stick'st not to conspire,"},{"lineNumber":7,"lineText":"Seeking that beauteous roof to ruinate"},{"lineNumber":8,"lineText":"Which to repair should be thy chief desire."},{"lineNumber":9,"lineText":"O! change thy thought, that I may change my mind:"},{"lineNumber":10,"lineText":"Shall hate be fairer lodg'd than gentle love?"},{"lineNumber":11,"lineText":"Be, as thy presence is, gracious and kind,"},{"lineNumber":12,"lineText":"Or to thyself at least kind-hearted prove:"},{"lineNumber":13,"lineText":"Make thee another self for love of me,"},{"lineNumber":14,"lineText":"That beauty still may live in thine or thee."}]}
+{
+  "title": "10",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "For shame! deny that thou bear'st love to any,"
+    },
+    { "lineNumber": 2, "lineText": "Who for thy self art so unprovident." },
+    {
+      "lineNumber": 3,
+      "lineText": "Grant, if thou wilt, thou art belov'd of many,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "But that thou none lov'st is most evident:"
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "For thou art so possess'd with murderous hate,"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "That 'gainst thy self thou stick'st not to conspire,"
+    },
+    { "lineNumber": 7, "lineText": "Seeking that beauteous roof to ruinate" },
+    {
+      "lineNumber": 8,
+      "lineText": "Which to repair should be thy chief desire."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "O! change thy thought, that I may change my mind:"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Shall hate be fairer lodg'd than gentle love?"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Be, as thy presence is, gracious and kind,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "Or to thyself at least kind-hearted prove:"
+    },
+    { "lineNumber": 13, "lineText": "Make thee another self for love of me," },
+    {
+      "lineNumber": 14,
+      "lineText": "That beauty still may live in thine or thee."
+    }
+  ]
+}

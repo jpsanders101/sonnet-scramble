@@ -1,1 +1,55 @@
-{"title":"24","lines":[{"lineNumber":1,"lineText":"Mine eye hath play'd the painter and hath stell'd,"},{"lineNumber":2,"lineText":"Thy beauty's form in table of my heart;"},{"lineNumber":3,"lineText":"My body is the frame wherein 'tis held,"},{"lineNumber":4,"lineText":"And perspective it is best painter's art."},{"lineNumber":5,"lineText":"For through the painter must you see his skill,"},{"lineNumber":6,"lineText":"To find where your true image pictur'd lies,"},{"lineNumber":7,"lineText":"Which in my bosom's shop is hanging still,"},{"lineNumber":8,"lineText":"That hath his windows glazed with thine eyes."},{"lineNumber":9,"lineText":"Now see what good turns eyes for eyes have done:"},{"lineNumber":10,"lineText":"Mine eyes have drawn thy shape, and thine for me"},{"lineNumber":11,"lineText":"Are windows to my breast, where-through the sun"},{"lineNumber":12,"lineText":"Delights to peep, to gaze therein on thee; "},{"lineNumber":13,"lineText":"Yet eyes this cunning want to grace their art,"},{"lineNumber":14,"lineText":"They draw but what they see, know not the heart."}]}
+{
+  "title": "24",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Mine eye hath play'd the painter and hath stell'd,"
+    },
+    { "lineNumber": 2, "lineText": "Thy beauty's form in table of my heart;" },
+    { "lineNumber": 3, "lineText": "My body is the frame wherein 'tis held," },
+    {
+      "lineNumber": 4,
+      "lineText": "And perspective it is best painter's art."
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "For through the painter must you see his skill,"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "To find where your true image pictur'd lies,"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "Which in my bosom's shop is hanging still,"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "That hath his windows glazed with thine eyes."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "Now see what good turns eyes for eyes have done:"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Mine eyes have drawn thy shape, and thine for me"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Are windows to my breast, where-through the sun"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "Delights to peep, to gaze therein on thee; "
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "Yet eyes this cunning want to grace their art,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "They draw but what they see, know not the heart."
+    }
+  ]
+}

@@ -1,1 +1,43 @@
-{"title":"74","lines":[{"lineNumber":1,"lineText":"But be contented: when that fell arrest"},{"lineNumber":2,"lineText":"Without all bail shall carry me away,"},{"lineNumber":3,"lineText":"My life hath in this line some interest,"},{"lineNumber":4,"lineText":"Which for memorial still with thee shall stay."},{"lineNumber":5,"lineText":"When thou reviewest this, thou dost review"},{"lineNumber":6,"lineText":"The very part was consecrate to thee:"},{"lineNumber":7,"lineText":"The earth can have but earth, which is his due;"},{"lineNumber":8,"lineText":"My spirit is thine, the better part of me:"},{"lineNumber":9,"lineText":"So then thou hast but lost the dregs of life,"},{"lineNumber":10,"lineText":"The prey of worms, my body being dead;"},{"lineNumber":11,"lineText":"The coward conquest of a wretch's knife,"},{"lineNumber":12,"lineText":"Too base of thee to be remembered."},{"lineNumber":13,"lineText":"The worth of that is that which it contains,"},{"lineNumber":14,"lineText":"And that is this, and this with thee remains."}]}
+{
+  "title": "74",
+  "lines": [
+    { "lineNumber": 1, "lineText": "But be contented: when that fell arrest" },
+    { "lineNumber": 2, "lineText": "Without all bail shall carry me away," },
+    { "lineNumber": 3, "lineText": "My life hath in this line some interest," },
+    {
+      "lineNumber": 4,
+      "lineText": "Which for memorial still with thee shall stay."
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "When thou reviewest this, thou dost review"
+    },
+    { "lineNumber": 6, "lineText": "The very part was consecrate to thee:" },
+    {
+      "lineNumber": 7,
+      "lineText": "The earth can have but earth, which is his due;"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "My spirit is thine, the better part of me:"
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "So then thou hast but lost the dregs of life,"
+    },
+    { "lineNumber": 10, "lineText": "The prey of worms, my body being dead;" },
+    {
+      "lineNumber": 11,
+      "lineText": "The coward conquest of a wretch's knife,"
+    },
+    { "lineNumber": 12, "lineText": "Too base of thee to be remembered." },
+    {
+      "lineNumber": 13,
+      "lineText": "The worth of that is that which it contains,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "And that is this, and this with thee remains."
+    }
+  ]
+}

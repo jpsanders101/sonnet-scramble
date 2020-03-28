@@ -1,7 +1,7 @@
-const path = require('path');
+const path = require("path")
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   const sonnets = await graphql(`
     query {
       allSonnetsJson {
@@ -13,13 +13,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  sonnets.data.allSonnetsJson.edges.forEach((sonnetNode) => {
+  sonnets.data.allSonnetsJson.edges.forEach(sonnetNode => {
     createPage({
       path: sonnetNode.node.title,
       component: path.resolve(`./src/templates/sonnet.js`),
       context: {
-        title: sonnetNode.node.title
-      }
+        title: sonnetNode.node.title,
+      },
     })
   })
-};
+}

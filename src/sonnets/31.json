@@ -1,1 +1,46 @@
-{"title":"31","lines":[{"lineNumber":1,"lineText":"Thy bosom is endeared with all hearts,"},{"lineNumber":2,"lineText":"Which I by lacking have supposed dead;"},{"lineNumber":3,"lineText":"And there reigns Love, and all Love's loving parts,"},{"lineNumber":4,"lineText":"And all those friends which I thought buried."},{"lineNumber":5,"lineText":"How many a holy and obsequious tear"},{"lineNumber":6,"lineText":"Hath dear religious love stol'n from mine eye,"},{"lineNumber":7,"lineText":"As interest of the dead, which now appear"},{"lineNumber":8,"lineText":"But things remov'd that hidden in thee lie!"},{"lineNumber":9,"lineText":"Thou art the grave where buried love doth live,"},{"lineNumber":10,"lineText":"Hung with the trophies of my lovers gone,"},{"lineNumber":11,"lineText":"Who all their parts of me to thee did give,"},{"lineNumber":12,"lineText":"That due of many now is thine alone:"},{"lineNumber":13,"lineText":"Their images I lov'd, I view in thee,"},{"lineNumber":14,"lineText":"And thou--all they--hast all the all of me."}]}
+{
+  "title": "31",
+  "lines": [
+    { "lineNumber": 1, "lineText": "Thy bosom is endeared with all hearts," },
+    { "lineNumber": 2, "lineText": "Which I by lacking have supposed dead;" },
+    {
+      "lineNumber": 3,
+      "lineText": "And there reigns Love, and all Love's loving parts,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "And all those friends which I thought buried."
+    },
+    { "lineNumber": 5, "lineText": "How many a holy and obsequious tear" },
+    {
+      "lineNumber": 6,
+      "lineText": "Hath dear religious love stol'n from mine eye,"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "As interest of the dead, which now appear"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "But things remov'd that hidden in thee lie!"
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "Thou art the grave where buried love doth live,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Hung with the trophies of my lovers gone,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Who all their parts of me to thee did give,"
+    },
+    { "lineNumber": 12, "lineText": "That due of many now is thine alone:" },
+    { "lineNumber": 13, "lineText": "Their images I lov'd, I view in thee," },
+    {
+      "lineNumber": 14,
+      "lineText": "And thou--all they--hast all the all of me."
+    }
+  ]
+}

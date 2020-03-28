@@ -1,1 +1,40 @@
-{"title":"59","lines":[{"lineNumber":1,"lineText":"If there be nothing new, but that which is"},{"lineNumber":2,"lineText":"Hath been before, how are our brains beguil'd,"},{"lineNumber":3,"lineText":"Which labouring for invention bear amiss"},{"lineNumber":4,"lineText":"The second burthen of a former child!"},{"lineNumber":5,"lineText":"O! that record could with a backward look,"},{"lineNumber":6,"lineText":"Even of five hundred courses of the sun,"},{"lineNumber":7,"lineText":"Show me your image in some antique book,"},{"lineNumber":8,"lineText":"Since mind at first in character was done!"},{"lineNumber":9,"lineText":"That I might see what the old world could say"},{"lineNumber":10,"lineText":"To this composed wonder of your frame;"},{"lineNumber":11,"lineText":"Wh'r we are mended, or wh'r better they,"},{"lineNumber":12,"lineText":"Or whether revolution be the same. "},{"lineNumber":13,"lineText":"O! sure I am the wits of former days,"},{"lineNumber":14,"lineText":"To subjects worse have given admiring praise."}]}
+{
+  "title": "59",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "If there be nothing new, but that which is"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "Hath been before, how are our brains beguil'd,"
+    },
+    { "lineNumber": 3, "lineText": "Which labouring for invention bear amiss" },
+    { "lineNumber": 4, "lineText": "The second burthen of a former child!" },
+    {
+      "lineNumber": 5,
+      "lineText": "O! that record could with a backward look,"
+    },
+    { "lineNumber": 6, "lineText": "Even of five hundred courses of the sun," },
+    { "lineNumber": 7, "lineText": "Show me your image in some antique book," },
+    {
+      "lineNumber": 8,
+      "lineText": "Since mind at first in character was done!"
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "That I might see what the old world could say"
+    },
+    { "lineNumber": 10, "lineText": "To this composed wonder of your frame;" },
+    {
+      "lineNumber": 11,
+      "lineText": "Wh'r we are mended, or wh'r better they,"
+    },
+    { "lineNumber": 12, "lineText": "Or whether revolution be the same. " },
+    { "lineNumber": 13, "lineText": "O! sure I am the wits of former days," },
+    {
+      "lineNumber": 14,
+      "lineText": "To subjects worse have given admiring praise."
+    }
+  ]
+}

@@ -1,1 +1,52 @@
-{"title":"133","lines":[{"lineNumber":1,"lineText":"Beshrew that heart that makes my heart to groan"},{"lineNumber":2,"lineText":"For that deep wound it gives my friend and me!"},{"lineNumber":3,"lineText":"Is't not enough to torture me alone,"},{"lineNumber":4,"lineText":"But slave to slavery my sweet'st friend must be?"},{"lineNumber":5,"lineText":"Me from myself thy cruel eye hath taken,"},{"lineNumber":6,"lineText":"And my next self thou harder hast engross'd:"},{"lineNumber":7,"lineText":"Of him, myself, and thee I am forsaken;"},{"lineNumber":8,"lineText":"A torment thrice three-fold thus to be cross'd:"},{"lineNumber":9,"lineText":"Prison my heart in thy steel bosom's ward, "},{"lineNumber":10,"lineText":"But then my friend's heart let my poor heart bail;"},{"lineNumber":11,"lineText":"Whoe'er keeps me, let my heart be his guard;"},{"lineNumber":12,"lineText":"Thou canst not then use rigour in my jail:"},{"lineNumber":13,"lineText":"And yet thou wilt; for I, being pent in thee,"},{"lineNumber":14,"lineText":"Perforce am thine, and all that is in me."}]}
+{
+  "title": "133",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Beshrew that heart that makes my heart to groan"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "For that deep wound it gives my friend and me!"
+    },
+    { "lineNumber": 3, "lineText": "Is't not enough to torture me alone," },
+    {
+      "lineNumber": 4,
+      "lineText": "But slave to slavery my sweet'st friend must be?"
+    },
+    { "lineNumber": 5, "lineText": "Me from myself thy cruel eye hath taken," },
+    {
+      "lineNumber": 6,
+      "lineText": "And my next self thou harder hast engross'd:"
+    },
+    { "lineNumber": 7, "lineText": "Of him, myself, and thee I am forsaken;" },
+    {
+      "lineNumber": 8,
+      "lineText": "A torment thrice three-fold thus to be cross'd:"
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "Prison my heart in thy steel bosom's ward, "
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "But then my friend's heart let my poor heart bail;"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Whoe'er keeps me, let my heart be his guard;"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "Thou canst not then use rigour in my jail:"
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "And yet thou wilt; for I, being pent in thee,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Perforce am thine, and all that is in me."
+    }
+  ]
+}

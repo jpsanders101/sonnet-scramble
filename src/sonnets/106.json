@@ -1,1 +1,46 @@
-{"title":"106","lines":[{"lineNumber":1,"lineText":"When in the chronicle of wasted time"},{"lineNumber":2,"lineText":"I see descriptions of the fairest wights,"},{"lineNumber":3,"lineText":"And beauty making beautiful old rime,"},{"lineNumber":4,"lineText":"In praise of ladies dead and lovely knights,"},{"lineNumber":5,"lineText":"Then, in the blazon of sweet beauty's best,"},{"lineNumber":6,"lineText":"Of hand, of foot, of lip, of eye, of brow,"},{"lineNumber":7,"lineText":"I see their antique pen would have express'd"},{"lineNumber":8,"lineText":"Even such a beauty as you master now."},{"lineNumber":9,"lineText":"So all their praises are but prophecies"},{"lineNumber":10,"lineText":"Of this our time, all you prefiguring;"},{"lineNumber":11,"lineText":"And for they looked but with divining eyes,"},{"lineNumber":12,"lineText":"They had not skill enough your worth to sing:"},{"lineNumber":13,"lineText":"For we, which now behold these present days,"},{"lineNumber":14,"lineText":"Have eyes to wonder, but lack tongues to praise."}]}
+{
+  "title": "106",
+  "lines": [
+    { "lineNumber": 1, "lineText": "When in the chronicle of wasted time" },
+    {
+      "lineNumber": 2,
+      "lineText": "I see descriptions of the fairest wights,"
+    },
+    { "lineNumber": 3, "lineText": "And beauty making beautiful old rime," },
+    {
+      "lineNumber": 4,
+      "lineText": "In praise of ladies dead and lovely knights,"
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "Then, in the blazon of sweet beauty's best,"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "Of hand, of foot, of lip, of eye, of brow,"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "I see their antique pen would have express'd"
+    },
+    { "lineNumber": 8, "lineText": "Even such a beauty as you master now." },
+    { "lineNumber": 9, "lineText": "So all their praises are but prophecies" },
+    { "lineNumber": 10, "lineText": "Of this our time, all you prefiguring;" },
+    {
+      "lineNumber": 11,
+      "lineText": "And for they looked but with divining eyes,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "They had not skill enough your worth to sing:"
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "For we, which now behold these present days,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Have eyes to wonder, but lack tongues to praise."
+    }
+  ]
+}

@@ -1,1 +1,55 @@
-{"title":"142","lines":[{"lineNumber":1,"lineText":"Love is my sin, and thy dear virtue hate,"},{"lineNumber":2,"lineText":"Hate of my sin, grounded on sinful loving:"},{"lineNumber":3,"lineText":"O! but with mine compare thou thine own state,"},{"lineNumber":4,"lineText":"And thou shalt find it merits not reproving;"},{"lineNumber":5,"lineText":"Or, if it do, not from those lips of thine, "},{"lineNumber":6,"lineText":"That have profan'd their scarlet ornaments"},{"lineNumber":7,"lineText":"And seal'd false bonds of love as oft as mine,"},{"lineNumber":8,"lineText":"Robb'd others' beds' revenues of their rents."},{"lineNumber":9,"lineText":"Be it lawful I love thee, as thou lov'st those"},{"lineNumber":10,"lineText":"Whom thine eyes woo as mine importune thee:"},{"lineNumber":11,"lineText":"Root pity in thy heart, that, when it grows,"},{"lineNumber":12,"lineText":"Thy pity may deserve to pitied be."},{"lineNumber":13,"lineText":"If thou dost seek to have what thou dost hide,"},{"lineNumber":14,"lineText":"By self-example mayst thou be denied!"}]}
+{
+  "title": "142",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Love is my sin, and thy dear virtue hate,"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "Hate of my sin, grounded on sinful loving:"
+    },
+    {
+      "lineNumber": 3,
+      "lineText": "O! but with mine compare thou thine own state,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "And thou shalt find it merits not reproving;"
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "Or, if it do, not from those lips of thine, "
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "That have profan'd their scarlet ornaments"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "And seal'd false bonds of love as oft as mine,"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "Robb'd others' beds' revenues of their rents."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "Be it lawful I love thee, as thou lov'st those"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Whom thine eyes woo as mine importune thee:"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Root pity in thy heart, that, when it grows,"
+    },
+    { "lineNumber": 12, "lineText": "Thy pity may deserve to pitied be." },
+    {
+      "lineNumber": 13,
+      "lineText": "If thou dost seek to have what thou dost hide,"
+    },
+    { "lineNumber": 14, "lineText": "By self-example mayst thou be denied!" }
+  ]
+}

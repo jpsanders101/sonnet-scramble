@@ -1,1 +1,49 @@
-{"title":"84","lines":[{"lineNumber":1,"lineText":"Who is it that says most, which can say more,"},{"lineNumber":2,"lineText":"Than this rich praise,--that you alone, are you?"},{"lineNumber":3,"lineText":"In whose confine immured is the store"},{"lineNumber":4,"lineText":"Which should example where your equal grew."},{"lineNumber":5,"lineText":"Lean penury within that pen doth dwell"},{"lineNumber":6,"lineText":"That to his subject lends not some small glory;"},{"lineNumber":7,"lineText":"But he that writes of you, if he can tell"},{"lineNumber":8,"lineText":"That you are you, so dignifies his story,"},{"lineNumber":9,"lineText":"Let him but copy what in you is writ,"},{"lineNumber":10,"lineText":"Not making worse what nature made so clear,"},{"lineNumber":11,"lineText":"And such a counterpart shall fame his wit,"},{"lineNumber":12,"lineText":"Making his style admired every where."},{"lineNumber":13,"lineText":"You to your beauteous blessings add a curse,"},{"lineNumber":14,"lineText":"Being fond on praise, which makes your praises worse."}]}
+{
+  "title": "84",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Who is it that says most, which can say more,"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "Than this rich praise,--that you alone, are you?"
+    },
+    { "lineNumber": 3, "lineText": "In whose confine immured is the store" },
+    {
+      "lineNumber": 4,
+      "lineText": "Which should example where your equal grew."
+    },
+    { "lineNumber": 5, "lineText": "Lean penury within that pen doth dwell" },
+    {
+      "lineNumber": 6,
+      "lineText": "That to his subject lends not some small glory;"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "But he that writes of you, if he can tell"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "That you are you, so dignifies his story,"
+    },
+    { "lineNumber": 9, "lineText": "Let him but copy what in you is writ," },
+    {
+      "lineNumber": 10,
+      "lineText": "Not making worse what nature made so clear,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "And such a counterpart shall fame his wit,"
+    },
+    { "lineNumber": 12, "lineText": "Making his style admired every where." },
+    {
+      "lineNumber": 13,
+      "lineText": "You to your beauteous blessings add a curse,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Being fond on praise, which makes your praises worse."
+    }
+  ]
+}

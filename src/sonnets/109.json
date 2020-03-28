@@ -1,1 +1,46 @@
-{"title":"109","lines":[{"lineNumber":1,"lineText":"O! never say that I was false of heart,"},{"lineNumber":2,"lineText":"Though absence seem'd my flame to qualify,"},{"lineNumber":3,"lineText":"As easy might I from my self depart"},{"lineNumber":4,"lineText":"As from my soul which in thy breast doth lie:"},{"lineNumber":5,"lineText":"That is my home of love: if I have rang'd,"},{"lineNumber":6,"lineText":"Like him that travels, I return again;"},{"lineNumber":7,"lineText":"Just to the time, not with the time exchang'd,"},{"lineNumber":8,"lineText":"So that myself bring water for my stain."},{"lineNumber":9,"lineText":"Never believe though in my nature reign'd,"},{"lineNumber":10,"lineText":"All frailties that besiege all kinds of blood,"},{"lineNumber":11,"lineText":"That it could so preposterously be stain'd, "},{"lineNumber":12,"lineText":"To leave for nothing all thy sum of good;"},{"lineNumber":13,"lineText":"For nothing this wide universe I call,"},{"lineNumber":14,"lineText":"Save thou, my rose, in it thou art my all."}]}
+{
+  "title": "109",
+  "lines": [
+    { "lineNumber": 1, "lineText": "O! never say that I was false of heart," },
+    {
+      "lineNumber": 2,
+      "lineText": "Though absence seem'd my flame to qualify,"
+    },
+    { "lineNumber": 3, "lineText": "As easy might I from my self depart" },
+    {
+      "lineNumber": 4,
+      "lineText": "As from my soul which in thy breast doth lie:"
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "That is my home of love: if I have rang'd,"
+    },
+    { "lineNumber": 6, "lineText": "Like him that travels, I return again;" },
+    {
+      "lineNumber": 7,
+      "lineText": "Just to the time, not with the time exchang'd,"
+    },
+    { "lineNumber": 8, "lineText": "So that myself bring water for my stain." },
+    {
+      "lineNumber": 9,
+      "lineText": "Never believe though in my nature reign'd,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "All frailties that besiege all kinds of blood,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "That it could so preposterously be stain'd, "
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "To leave for nothing all thy sum of good;"
+    },
+    { "lineNumber": 13, "lineText": "For nothing this wide universe I call," },
+    {
+      "lineNumber": 14,
+      "lineText": "Save thou, my rose, in it thou art my all."
+    }
+  ]
+}

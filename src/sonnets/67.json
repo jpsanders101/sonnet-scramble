@@ -1,1 +1,46 @@
-{"title":"67","lines":[{"lineNumber":1,"lineText":"Ah! wherefore with infection should he live,"},{"lineNumber":2,"lineText":"And with his presence grace impiety,"},{"lineNumber":3,"lineText":"That sin by him advantage should achieve,"},{"lineNumber":4,"lineText":"And lace itself with his society? "},{"lineNumber":5,"lineText":"Why should false painting imitate his cheek,"},{"lineNumber":6,"lineText":"And steel dead seeming of his living hue?"},{"lineNumber":7,"lineText":"Why should poor beauty indirectly seek"},{"lineNumber":8,"lineText":"Roses of shadow, since his rose is true?"},{"lineNumber":9,"lineText":"Why should he live, now Nature bankrupt is,"},{"lineNumber":10,"lineText":"Beggar'd of blood to blush through lively veins?"},{"lineNumber":11,"lineText":"For she hath no exchequer now but his,"},{"lineNumber":12,"lineText":"And proud of many, lives upon his gains."},{"lineNumber":13,"lineText":"O! him she stores, to show what wealth she had"},{"lineNumber":14,"lineText":"In days long since, before these last so bad."}]}
+{
+  "title": "67",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Ah! wherefore with infection should he live,"
+    },
+    { "lineNumber": 2, "lineText": "And with his presence grace impiety," },
+    {
+      "lineNumber": 3,
+      "lineText": "That sin by him advantage should achieve,"
+    },
+    { "lineNumber": 4, "lineText": "And lace itself with his society? " },
+    {
+      "lineNumber": 5,
+      "lineText": "Why should false painting imitate his cheek,"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "And steel dead seeming of his living hue?"
+    },
+    { "lineNumber": 7, "lineText": "Why should poor beauty indirectly seek" },
+    { "lineNumber": 8, "lineText": "Roses of shadow, since his rose is true?" },
+    {
+      "lineNumber": 9,
+      "lineText": "Why should he live, now Nature bankrupt is,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Beggar'd of blood to blush through lively veins?"
+    },
+    { "lineNumber": 11, "lineText": "For she hath no exchequer now but his," },
+    {
+      "lineNumber": 12,
+      "lineText": "And proud of many, lives upon his gains."
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "O! him she stores, to show what wealth she had"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "In days long since, before these last so bad."
+    }
+  ]
+}

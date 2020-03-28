@@ -1,1 +1,43 @@
-{"title":"125","lines":[{"lineNumber":1,"lineText":"Were't aught to me I bore the canopy,"},{"lineNumber":2,"lineText":"With my extern the outward honouring,"},{"lineNumber":3,"lineText":"Or laid great bases for eternity,"},{"lineNumber":4,"lineText":"Which proves more short than waste or ruining?"},{"lineNumber":5,"lineText":"Have I not seen dwellers on form and favour"},{"lineNumber":6,"lineText":"Lose all and more by paying too much rent"},{"lineNumber":7,"lineText":"For compound sweet; forgoing simple savour,"},{"lineNumber":8,"lineText":"Pitiful thrivers, in their gazing spent?"},{"lineNumber":9,"lineText":"No; let me be obsequious in thy heart,"},{"lineNumber":10,"lineText":"And take thou my oblation, poor but free,"},{"lineNumber":11,"lineText":"Which is not mix'd with seconds, knows no art,"},{"lineNumber":12,"lineText":"But mutual render, only me for thee."},{"lineNumber":13,"lineText":"Hence, thou suborned informer! a true soul"},{"lineNumber":14,"lineText":"When most impeach'd, stands least in thy control."}]}
+{
+  "title": "125",
+  "lines": [
+    { "lineNumber": 1, "lineText": "Were't aught to me I bore the canopy," },
+    { "lineNumber": 2, "lineText": "With my extern the outward honouring," },
+    { "lineNumber": 3, "lineText": "Or laid great bases for eternity," },
+    {
+      "lineNumber": 4,
+      "lineText": "Which proves more short than waste or ruining?"
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "Have I not seen dwellers on form and favour"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "Lose all and more by paying too much rent"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "For compound sweet; forgoing simple savour,"
+    },
+    { "lineNumber": 8, "lineText": "Pitiful thrivers, in their gazing spent?" },
+    { "lineNumber": 9, "lineText": "No; let me be obsequious in thy heart," },
+    {
+      "lineNumber": 10,
+      "lineText": "And take thou my oblation, poor but free,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Which is not mix'd with seconds, knows no art,"
+    },
+    { "lineNumber": 12, "lineText": "But mutual render, only me for thee." },
+    {
+      "lineNumber": 13,
+      "lineText": "Hence, thou suborned informer! a true soul"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "When most impeach'd, stands least in thy control."
+    }
+  ]
+}

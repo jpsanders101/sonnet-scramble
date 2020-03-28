@@ -4,8 +4,10 @@ import Game from "../components/game"
 import shuffle from "shuffle-array"
 
 export default ({ data }) => {
-  const { sonnetsJson: { lines, title }} = data;
-  const randomisedLines = shuffle(lines);
+  const {
+    sonnetsJson: { lines, title },
+  } = data
+  const randomisedLines = shuffle(lines)
 
   return (
     <>
@@ -17,7 +19,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($title: String!) {
-    sonnetsJson(title: {eq: $title}) {
+    sonnetsJson(title: { eq: $title }) {
       title
       lines {
         lineNumber

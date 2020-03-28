@@ -4,60 +4,65 @@ import Line from "./line"
 
 export default ({ lines }) => {
   // TODO change name 'solved lines'
-  const initialSolutionLines = Array(14).fill({ setType: "solution", line: null }).map((lineNode, index) => ({ ...lineNode, position: index }));
-  const [solvedLines, setSolvedLines] = useState(initialSolutionLines);
+  const initialSolutionLines = Array(14)
+    .fill({ setType: "solution", line: null })
+    .map((lineNode, index) => ({ ...lineNode, position: index }))
+  const [solvedLines, setSolvedLines] = useState(initialSolutionLines)
 
   const mappedScrambledLines = lines.map((line, index) => ({
     line,
     position: index,
-    setType: "scramble"
-  }));
+    setType: "scramble",
+  }))
 
-  const [scrambledLines, setScrambledLines] = useState(mappedScrambledLines);
+  const [scrambledLines, setScrambledLines] = useState(mappedScrambledLines)
 
-  const [selectedLine, setSelectedLine] = useState(null);
+  const [selectedLine, setSelectedLine] = useState(null)
 
-  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false);
+  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false)
 
-  const registerClick = (clickedLine) => {
+  const registerClick = clickedLine => {
     if (selectedLine) {
-      const selectedLineContents = { ...selectedLine.line };
-      const clickedLineContents = { ...clickedLine.line };
+      const selectedLineContents = { ...selectedLine.line }
+      const clickedLineContents = { ...clickedLine.line }
 
-      const newSolvedLines = [...solvedLines];
-      const newScrambledLines = [...scrambledLines];
+      const newSolvedLines = [...solvedLines]
+      const newScrambledLines = [...scrambledLines]
 
       const mapping = {
         solution: newSolvedLines,
-        scramble: newScrambledLines
-      };
+        scramble: newScrambledLines,
+      }
 
-      mapping[selectedLine.setType][selectedLine.position].line = clickedLineContents;
-      mapping[clickedLine.setType][clickedLine.position].line = selectedLineContents;
+      mapping[selectedLine.setType][
+        selectedLine.position
+      ].line = clickedLineContents
+      mapping[clickedLine.setType][
+        clickedLine.position
+      ].line = selectedLineContents
 
-      setSolvedLines(newSolvedLines);
-      setScrambledLines(newScrambledLines);
+      setSolvedLines(newSolvedLines)
+      setScrambledLines(newScrambledLines)
 
       const isUnscrambled = newSolvedLines.every(lineNode => {
-        return !!lineNode.line && lineNode.position + 1 === lineNode.line.lineNumber;
+        return (
+          !!lineNode.line && lineNode.position + 1 === lineNode.line.lineNumber
+        )
       })
 
-      setIsSonnetUnscrambled(isUnscrambled);
+      setIsSonnetUnscrambled(isUnscrambled)
 
-      setSelectedLine(null);
-
+      setSelectedLine(null)
     } else {
       if (clickedLine.line) {
-        setSelectedLine(clickedLine);
+        setSelectedLine(clickedLine)
       }
     }
   }
 
   return (
     <main>
-      {isSonnetUnscrambled && (
-        <div>{`Correct!`}</div>
-      )}
+      {isSonnetUnscrambled && <div>{`Correct!`}</div>}
       <section css={puzzleSection}>
         <div>
           {solvedLines.map(solvedLine => (
@@ -89,5 +94,5 @@ export default ({ lines }) => {
 
 const puzzleSection = css`
   display: grid;
-  grid-template-columns: 1fr 1fr
-`;
+  grid-template-columns: 1fr 1fr;
+`

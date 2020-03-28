@@ -1,1 +1,55 @@
-{"title":"137","lines":[{"lineNumber":1,"lineText":"Thou blind fool, Love, what dost thou to mine eyes,"},{"lineNumber":2,"lineText":"That they behold, and see not what they see?"},{"lineNumber":3,"lineText":"They know what beauty is, see where it lies,"},{"lineNumber":4,"lineText":"Yet what the best is take the worst to be."},{"lineNumber":5,"lineText":"If eyes, corrupt by over-partial looks, "},{"lineNumber":6,"lineText":"Be anchor'd in the bay where all men ride,"},{"lineNumber":7,"lineText":"Why of eyes' falsehood hast thou forged hooks,"},{"lineNumber":8,"lineText":"Whereto the judgment of my heart is tied?"},{"lineNumber":9,"lineText":"Why should my heart think that a several plot,"},{"lineNumber":10,"lineText":"Which my heart knows the wide world's common place?"},{"lineNumber":11,"lineText":"Or mine eyes, seeing this, say this is not,"},{"lineNumber":12,"lineText":"To put fair truth upon so foul a face?"},{"lineNumber":13,"lineText":"In things right true my heart and eyes have err'd,"},{"lineNumber":14,"lineText":"And to this false plague are they now transferr'd."}]}
+{
+  "title": "137",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "Thou blind fool, Love, what dost thou to mine eyes,"
+    },
+    {
+      "lineNumber": 2,
+      "lineText": "That they behold, and see not what they see?"
+    },
+    {
+      "lineNumber": 3,
+      "lineText": "They know what beauty is, see where it lies,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "Yet what the best is take the worst to be."
+    },
+    { "lineNumber": 5, "lineText": "If eyes, corrupt by over-partial looks, " },
+    {
+      "lineNumber": 6,
+      "lineText": "Be anchor'd in the bay where all men ride,"
+    },
+    {
+      "lineNumber": 7,
+      "lineText": "Why of eyes' falsehood hast thou forged hooks,"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "Whereto the judgment of my heart is tied?"
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "Why should my heart think that a several plot,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Which my heart knows the wide world's common place?"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Or mine eyes, seeing this, say this is not,"
+    },
+    { "lineNumber": 12, "lineText": "To put fair truth upon so foul a face?" },
+    {
+      "lineNumber": 13,
+      "lineText": "In things right true my heart and eyes have err'd,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "And to this false plague are they now transferr'd."
+    }
+  ]
+}

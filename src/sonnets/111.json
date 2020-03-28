@@ -1,1 +1,46 @@
-{"title":"111","lines":[{"lineNumber":1,"lineText":"O! for my sake do you with Fortune chide,"},{"lineNumber":2,"lineText":"The guilty goddess of my harmful deeds,"},{"lineNumber":3,"lineText":"That did not better for my life provide"},{"lineNumber":4,"lineText":"Than public means which public manners breeds."},{"lineNumber":5,"lineText":"Thence comes it that my name receives a brand,"},{"lineNumber":6,"lineText":"And almost thence my nature is subdu'd"},{"lineNumber":7,"lineText":"To what it works in, like the dyer's hand:"},{"lineNumber":8,"lineText":"Pity me, then, and wish I were renew'd;"},{"lineNumber":9,"lineText":"Whilst, like a willing patient, I will drink,"},{"lineNumber":10,"lineText":"Potions of eisel 'gainst my strong infection;"},{"lineNumber":11,"lineText":"No bitterness that I will bitter think,"},{"lineNumber":12,"lineText":"Nor double penance, to correct correction."},{"lineNumber":13,"lineText":"Pity me then, dear friend, and I assure ye,"},{"lineNumber":14,"lineText":"Even that your pity is enough to cure me."}]}
+{
+  "title": "111",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "O! for my sake do you with Fortune chide,"
+    },
+    { "lineNumber": 2, "lineText": "The guilty goddess of my harmful deeds," },
+    { "lineNumber": 3, "lineText": "That did not better for my life provide" },
+    {
+      "lineNumber": 4,
+      "lineText": "Than public means which public manners breeds."
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "Thence comes it that my name receives a brand,"
+    },
+    { "lineNumber": 6, "lineText": "And almost thence my nature is subdu'd" },
+    {
+      "lineNumber": 7,
+      "lineText": "To what it works in, like the dyer's hand:"
+    },
+    { "lineNumber": 8, "lineText": "Pity me, then, and wish I were renew'd;" },
+    {
+      "lineNumber": 9,
+      "lineText": "Whilst, like a willing patient, I will drink,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Potions of eisel 'gainst my strong infection;"
+    },
+    { "lineNumber": 11, "lineText": "No bitterness that I will bitter think," },
+    {
+      "lineNumber": 12,
+      "lineText": "Nor double penance, to correct correction."
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "Pity me then, dear friend, and I assure ye,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "Even that your pity is enough to cure me."
+    }
+  ]
+}

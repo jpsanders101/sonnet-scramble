@@ -1,1 +1,49 @@
-{"title":"23","lines":[{"lineNumber":1,"lineText":"As an unperfect actor on the stage,"},{"lineNumber":2,"lineText":"Who with his fear is put beside his part,"},{"lineNumber":3,"lineText":"Or some fierce thing replete with too much rage,"},{"lineNumber":4,"lineText":"Whose strength's abundance weakens his own heart;"},{"lineNumber":5,"lineText":"So I, for fear of trust, forget to say"},{"lineNumber":6,"lineText":"The perfect ceremony of love's rite,"},{"lineNumber":7,"lineText":"And in mine own love's strength seem to decay,"},{"lineNumber":8,"lineText":"O'ercharg'd with burthen of mine own love's might. "},{"lineNumber":9,"lineText":"O! let my looks be then the eloquence"},{"lineNumber":10,"lineText":"And dumb presagers of my speaking breast,"},{"lineNumber":11,"lineText":"Who plead for love, and look for recompense,"},{"lineNumber":12,"lineText":"More than that tongue that more hath more express'd."},{"lineNumber":13,"lineText":"O! learn to read what silent love hath writ:"},{"lineNumber":14,"lineText":"To hear with eyes belongs to love's fine wit."}]}
+{
+  "title": "23",
+  "lines": [
+    { "lineNumber": 1, "lineText": "As an unperfect actor on the stage," },
+    {
+      "lineNumber": 2,
+      "lineText": "Who with his fear is put beside his part,"
+    },
+    {
+      "lineNumber": 3,
+      "lineText": "Or some fierce thing replete with too much rage,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "Whose strength's abundance weakens his own heart;"
+    },
+    { "lineNumber": 5, "lineText": "So I, for fear of trust, forget to say" },
+    { "lineNumber": 6, "lineText": "The perfect ceremony of love's rite," },
+    {
+      "lineNumber": 7,
+      "lineText": "And in mine own love's strength seem to decay,"
+    },
+    {
+      "lineNumber": 8,
+      "lineText": "O'ercharg'd with burthen of mine own love's might. "
+    },
+    { "lineNumber": 9, "lineText": "O! let my looks be then the eloquence" },
+    {
+      "lineNumber": 10,
+      "lineText": "And dumb presagers of my speaking breast,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "Who plead for love, and look for recompense,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "More than that tongue that more hath more express'd."
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "O! learn to read what silent love hath writ:"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "To hear with eyes belongs to love's fine wit."
+    }
+  ]
+}

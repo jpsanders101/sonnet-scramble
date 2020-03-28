@@ -1,1 +1,52 @@
-{"title":"39","lines":[{"lineNumber":1,"lineText":"O! how thy worth with manners may I sing,"},{"lineNumber":2,"lineText":"When thou art all the better part of me?"},{"lineNumber":3,"lineText":"What can mine own praise to mine own self bring?"},{"lineNumber":4,"lineText":"And what is't but mine own when I praise thee?"},{"lineNumber":5,"lineText":"Even for this, let us divided live,"},{"lineNumber":6,"lineText":"And our dear love lose name of single one,"},{"lineNumber":7,"lineText":"That by this separation I may give"},{"lineNumber":8,"lineText":"That due to thee which thou deserv'st alone."},{"lineNumber":9,"lineText":"O absence! what a torment wouldst thou prove,"},{"lineNumber":10,"lineText":"Were it not thy sour leisure gave sweet leave,"},{"lineNumber":11,"lineText":"To entertain the time with thoughts of love,"},{"lineNumber":12,"lineText":"Which time and thoughts so sweetly doth deceive, "},{"lineNumber":13,"lineText":"And that thou teachest how to make one twain,"},{"lineNumber":14,"lineText":"By praising him here who doth hence remain."}]}
+{
+  "title": "39",
+  "lines": [
+    {
+      "lineNumber": 1,
+      "lineText": "O! how thy worth with manners may I sing,"
+    },
+    { "lineNumber": 2, "lineText": "When thou art all the better part of me?" },
+    {
+      "lineNumber": 3,
+      "lineText": "What can mine own praise to mine own self bring?"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "And what is't but mine own when I praise thee?"
+    },
+    { "lineNumber": 5, "lineText": "Even for this, let us divided live," },
+    {
+      "lineNumber": 6,
+      "lineText": "And our dear love lose name of single one,"
+    },
+    { "lineNumber": 7, "lineText": "That by this separation I may give" },
+    {
+      "lineNumber": 8,
+      "lineText": "That due to thee which thou deserv'st alone."
+    },
+    {
+      "lineNumber": 9,
+      "lineText": "O absence! what a torment wouldst thou prove,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Were it not thy sour leisure gave sweet leave,"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "To entertain the time with thoughts of love,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "Which time and thoughts so sweetly doth deceive, "
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "And that thou teachest how to make one twain,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "By praising him here who doth hence remain."
+    }
+  ]
+}

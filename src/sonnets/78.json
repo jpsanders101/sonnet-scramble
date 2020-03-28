@@ -1,1 +1,43 @@
-{"title":"78","lines":[{"lineNumber":1,"lineText":"So oft have I invoked thee for my Muse,"},{"lineNumber":2,"lineText":"And found such fair assistance in my verse"},{"lineNumber":3,"lineText":"As every alien pen hath got my use"},{"lineNumber":4,"lineText":"And under thee their poesy disperse."},{"lineNumber":5,"lineText":"Thine eyes, that taught the dumb on high to sing"},{"lineNumber":6,"lineText":"And heavy ignorance aloft to fly,"},{"lineNumber":7,"lineText":"Have added feathers to the learned's wing"},{"lineNumber":8,"lineText":"And given grace a double majesty."},{"lineNumber":9,"lineText":"Yet be most proud of that which I compile,"},{"lineNumber":10,"lineText":"Whose influence is thine, and born of thee:"},{"lineNumber":11,"lineText":"In others' works thou dost but mend the style,"},{"lineNumber":12,"lineText":"And arts with thy sweet graces graced be;"},{"lineNumber":13,"lineText":"But thou art all my art, and dost advance"},{"lineNumber":14,"lineText":"As high as learning, my rude ignorance."}]}
+{
+  "title": "78",
+  "lines": [
+    { "lineNumber": 1, "lineText": "So oft have I invoked thee for my Muse," },
+    {
+      "lineNumber": 2,
+      "lineText": "And found such fair assistance in my verse"
+    },
+    { "lineNumber": 3, "lineText": "As every alien pen hath got my use" },
+    { "lineNumber": 4, "lineText": "And under thee their poesy disperse." },
+    {
+      "lineNumber": 5,
+      "lineText": "Thine eyes, that taught the dumb on high to sing"
+    },
+    { "lineNumber": 6, "lineText": "And heavy ignorance aloft to fly," },
+    {
+      "lineNumber": 7,
+      "lineText": "Have added feathers to the learned's wing"
+    },
+    { "lineNumber": 8, "lineText": "And given grace a double majesty." },
+    {
+      "lineNumber": 9,
+      "lineText": "Yet be most proud of that which I compile,"
+    },
+    {
+      "lineNumber": 10,
+      "lineText": "Whose influence is thine, and born of thee:"
+    },
+    {
+      "lineNumber": 11,
+      "lineText": "In others' works thou dost but mend the style,"
+    },
+    {
+      "lineNumber": 12,
+      "lineText": "And arts with thy sweet graces graced be;"
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "But thou art all my art, and dost advance"
+    },
+    { "lineNumber": 14, "lineText": "As high as learning, my rude ignorance." }
+  ]
+}

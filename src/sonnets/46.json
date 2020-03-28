@@ -1,1 +1,46 @@
-{"title":"46","lines":[{"lineNumber":1,"lineText":"Mine eye and heart are at a mortal war,"},{"lineNumber":2,"lineText":"How to divide the conquest of thy sight;"},{"lineNumber":3,"lineText":"Mine eye my heart thy picture's sight would bar,"},{"lineNumber":4,"lineText":"My heart mine eye the freedom of that right."},{"lineNumber":5,"lineText":"My heart doth plead that thou in him dost lie,--"},{"lineNumber":6,"lineText":"A closet never pierc'd with crystal eyes--"},{"lineNumber":7,"lineText":"But the defendant doth that plea deny,"},{"lineNumber":8,"lineText":"And says in him thy fair appearance lies."},{"lineNumber":9,"lineText":"To side this title is impannelled"},{"lineNumber":10,"lineText":"A quest of thoughts, all tenants to the heart;"},{"lineNumber":11,"lineText":"And by their verdict is determined"},{"lineNumber":12,"lineText":"The clear eye's moiety, and the dear heart's part:"},{"lineNumber":13,"lineText":"As thus; mine eye's due is thy outward part,"},{"lineNumber":14,"lineText":"And my heart's right, thy inward love of heart."}]}
+{
+  "title": "46",
+  "lines": [
+    { "lineNumber": 1, "lineText": "Mine eye and heart are at a mortal war," },
+    { "lineNumber": 2, "lineText": "How to divide the conquest of thy sight;" },
+    {
+      "lineNumber": 3,
+      "lineText": "Mine eye my heart thy picture's sight would bar,"
+    },
+    {
+      "lineNumber": 4,
+      "lineText": "My heart mine eye the freedom of that right."
+    },
+    {
+      "lineNumber": 5,
+      "lineText": "My heart doth plead that thou in him dost lie,--"
+    },
+    {
+      "lineNumber": 6,
+      "lineText": "A closet never pierc'd with crystal eyes--"
+    },
+    { "lineNumber": 7, "lineText": "But the defendant doth that plea deny," },
+    {
+      "lineNumber": 8,
+      "lineText": "And says in him thy fair appearance lies."
+    },
+    { "lineNumber": 9, "lineText": "To side this title is impannelled" },
+    {
+      "lineNumber": 10,
+      "lineText": "A quest of thoughts, all tenants to the heart;"
+    },
+    { "lineNumber": 11, "lineText": "And by their verdict is determined" },
+    {
+      "lineNumber": 12,
+      "lineText": "The clear eye's moiety, and the dear heart's part:"
+    },
+    {
+      "lineNumber": 13,
+      "lineText": "As thus; mine eye's due is thy outward part,"
+    },
+    {
+      "lineNumber": 14,
+      "lineText": "And my heart's right, thy inward love of heart."
+    }
+  ]
+}
