@@ -11,5 +11,6 @@ module.exports = {
         path: `${__dirname}/src/sonnets`,
       },
     },
+    'gatsby-plugin-emotion',
   ],
 }
