@@ -2,20 +2,23 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { css } from "@emotion/core"
-import { BRIGHT_PINK, YELLOW } from "../constants/styles"
+import { BRIGHT_PINK, YELLOW, BREAKPOINTS } from "../constants/styles"
 import shakespeareSvg from "../../assets/shakespeare.svg"
 import rightArrowSvg from "../../assets/arrow.svg"
+
+const { SMALL, LARGE } = BREAKPOINTS;
 
 export default () => (
   <Layout>
     <div css={backgroundContainerStyle}>
       <img css={shakespeareImgStyle} src={shakespeareSvg} alt="Shakespeare‘s head" />
     </div>
-    <div css={contentContainerStyle}>
-      <div css={headingContainerStyle}>
-        <h1 css={headingStyleOne}><span css={headingTextStyle}>{`Sonnet`}</span></h1>
-        <h1 css={headingStyleTwo}><span css={headingTextStyle}>{`Scramble`}</span></h1>
-      </div>
+    <div css={contentContainerOuterStyle}>
+      <div css={contentContainerInnerStyle}>
+        <div css={headingContainerStyle}>
+          <h1 css={headingStyleOne}><span css={headingTextStyle}>{`Sonnet`}</span></h1>
+          <h1 css={headingStyleTwo}><span css={headingTextStyle}>{`Scramble`}</span></h1>
+        </div>
       <div css={textContainerStyle}>
         <div css={textStyle}>
           <p>{`At several times during Shakespeare’s career, the London theatres which were his main livelihood were closed due to outbreaks of the plague.`}</p>
@@ -25,10 +28,10 @@ export default () => (
         </div>
         <Link css={linkStyle} to="/1">
           <div css={linkContainerStyle}>
-            <div css={linkTextStyle}>{`Begin`}</div>
             <img css={rightArrowStyle} src={rightArrowSvg} alt="Right arrow" />
           </div>
         </Link>
+        </div>
       </div>
     </div>
   </Layout>
@@ -39,6 +42,16 @@ const headingContainerStyle = css`
   display: flex;
   flex-direction: column;
   width: 175px;
+
+  @media (min-width: ${SMALL}) {
+    width: 250px;
+    font-size: 1.5em;
+  }
+
+  @media (min-width: ${LARGE}) {
+    width: 350px;
+    font-size: 2em;
+  }
 `;
 
 const headingStyleCommon = `
@@ -56,13 +69,6 @@ const headingStyleTwo = css`
   align-self: flex-end;
 `;
 
-const linkTextStyle = css`
-  font-family: impact;
-  & span {
-    vertical-align: middle;
-  }
-`;
-
 const rightArrowStyle = css`
   height: 50px;
 `;
@@ -76,10 +82,19 @@ const headingTextStyle = css`
   font-family: impact;
 `;
 
-const contentContainerStyle = css`
+const contentContainerOuterStyle = css`
   position: absolute;
   top: 0;
+  width: 100%;
+`;
+
+const contentContainerInnerStyle = css`
   margin: 1em;
+
+  @media (min-width: ${SMALL}) {
+    width: calc(${SMALL} - 2em);
+    margin: 1em auto;
+  }
 `;
 
 const backgroundContainerStyle = css`
@@ -93,16 +108,23 @@ const backgroundContainerStyle = css`
 const shakespeareImgStyle = css`
   position: absolute;
   bottom: 0;
-  right: -60%;
-  height: 60vh;
+  right: -250px;
+  width: 500px;
+  max-height: 70vh;
+  
+  @media (min-width: ${SMALL}) {
+    width: 90vw;
+  }
 `;
 
 const textStyle = css`
   color: black;
-  text-shadow: 2px 2px ${YELLOW};
   line-height: 1.25;
   & p {
     margin: 2em 0;
+    &:hover {
+      text-shadow: 2px 2px ${YELLOW};
+    }
   }
 `;
 
@@ -119,7 +141,13 @@ margin: 0 auto;
   border-radius: 20px;
   display: flex;
   height: 50px;
+  width: 50px;
   justify-content: space-evenly;
   align-items: center;
   font-family: impact;
+  border: solid 3px #FFFFFFFF;
+
+  &:hover {
+    border: solid 3px ${BRIGHT_PINK};
+  }
 `;
