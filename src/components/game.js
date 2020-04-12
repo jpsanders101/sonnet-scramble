@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import { css } from "@emotion/core"
 import Line from "./line"
+import { BREAKPOINTS, YELLOW } from "../constants/styles"
+
+const { MEDIUM } = BREAKPOINTS;
 
 export default ({ lines }) => {
   // TODO change name 'solved lines'
@@ -63,17 +66,19 @@ export default ({ lines }) => {
   return (
     <main>
       {isSonnetUnscrambled && <div>{`Correct!`}</div>}
-      <section css={puzzleSection}>
-        <div>
-          {solvedLines.map(solvedLine => (
-            <Line
-              key={`solved-${solvedLine.position}`}
-              line={solvedLine}
-              registerClick={registerClick}
-              isSelected={selectedLine === solvedLine}
-              setType="solution"
-            />
-          ))}
+      <section css={puzzleSectionStyle}>
+        <div css={solutionSectionContainerStyle}>
+          <div css={solutionSectionStyle}>
+            {solvedLines.map(solvedLine => (
+              <Line
+                key={`solved-${solvedLine.position}`}
+                line={solvedLine}
+                registerClick={registerClick}
+                isSelected={selectedLine === solvedLine}
+                setType="solution"
+              />
+            ))}
+          </div>
         </div>
         <div>
           {scrambledLines.map(lineNode => (
@@ -92,7 +97,23 @@ export default ({ lines }) => {
   )
 }
 
-const puzzleSection = css`
+const puzzleSectionStyle = css`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-`
+  grid-template-columns: 1fr;
+  @media (min-width: ${MEDIUM}) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+const solutionSectionContainerStyle = css`
+  display: flex;
+  justify-content: center;
+`;
+
+const solutionSectionStyle = css`
+  max-width: 500px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: lightyellow;
+`;

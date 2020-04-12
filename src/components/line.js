@@ -8,19 +8,26 @@ export default ({ line, isSelected, registerClick }) => {
 
   const lineStyle = css`
     color: red;
-    height: 20px;
-    ${isSelected &&
-      `
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    display: table;
+    ${isSelected && `
       border: solid 2px blue;
     `}
     ${line.setType === "scramble"
       ? `background-color: lightyellow;`
-      : `background-color: lightblue;`}
+      : `border-bottom: lightgrey 2px solid;`}
   `
 
   return (
     <p css={lineStyle} onClick={handleOnClick}>
-      {line.line && line.line.lineText}
+      <span css={lineTextStyle}>{line.line && line.line.lineText}</span>
     </p>
   )
 }
+
+const lineTextStyle = css`
+  display: table-cell;
+  vertical-align: bottom;
+`;
