@@ -80,7 +80,7 @@ export default ({ lines }) => {
             ))}
           </div>
         </div>
-        <div>
+        <div css={scrambleSectionStyle}>
           {scrambledLines.map(lineNode => (
             <Line
               key={`scrambled-${lineNode.position}`}
@@ -97,6 +97,12 @@ export default ({ lines }) => {
   )
 }
 
+const scrambleSectionStyle = css`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+`;
+
 const puzzleSectionStyle = css`
   display: grid;
   grid-template-columns: 1fr;
@@ -111,9 +117,10 @@ const solutionSectionContainerStyle = css`
 `;
 
 const solutionSectionStyle = css`
+  overflow: hidden;
   max-width: 500px;
   width: 100%;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: lightyellow;
 `;
