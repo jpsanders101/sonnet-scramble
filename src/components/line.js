@@ -71,8 +71,8 @@ export default ({ line, isSelected, registerClick, tabIndex }) => {
 `;
 
   return (
-    <p css={lineStyle} onClick={handleOnClick} tabIndex={tabIndex} onKeyDown={handleKeyDown}>
+    <div css={lineStyle} onClick={handleOnClick} tabIndex={tabIndex} onKeyDown={handleKeyDown} role="button">
       <span css={lineTextStyle}>{line.line && line.line.lineText}</span>
-    </p>
+    </div>
   )
 }
