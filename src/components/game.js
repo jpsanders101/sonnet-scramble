@@ -68,7 +68,7 @@ export default ({ lines, title }) => {
   }
 
   return (
-    <main>
+    <div>
       {isSonnetUnscrambled && (
       <h2 css={correctMessageStyle}>
         <span css={correctMessageTextStyle}>
@@ -82,8 +82,7 @@ export default ({ lines, title }) => {
           </Link>
         )}
       </h2>
-      )}
-        
+      )}    
       <section css={puzzleSectionStyle}>
         <div css={solutionSectionContainerStyle}>
           <div css={solutionSectionStyle}>
@@ -111,7 +110,7 @@ export default ({ lines, title }) => {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 

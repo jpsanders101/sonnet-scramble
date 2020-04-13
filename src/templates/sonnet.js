@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Game from "../components/game"
+import Layout from "../components/layout"
 import shuffle from "shuffle-array"
 import { BRIGHT_PINK, YELLOW, BREAKPOINTS } from "../constants/styles"
 import { css } from "@emotion/core"
@@ -14,10 +15,10 @@ export default ({ data }) => {
   const randomisedLines = shuffle(lines)
 
   return (
-    <>
+    <Layout>
       <h1 css={headingStyle}><span css={headingTextSyle}>{`Sonnet ${title}`}</span></h1>
       <Game lines={randomisedLines} title={title} />
-    </>
+    </Layout>
   )
 }
 
