@@ -41,16 +41,17 @@ const headingContainerStyle = css`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 175px;
+  width: 200px;
+  font-size: 25px;
 
   @media (min-width: ${SMALL}) {
     width: 250px;
-    font-size: 1.5em;
+    font-size: 30px;
   }
 
   @media (min-width: ${LARGE}) {
-    width: 350px;
-    font-size: 2em;
+    width: 325px;
+    font-size: 40px;
   }
 `;
 
