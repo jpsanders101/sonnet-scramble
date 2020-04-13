@@ -2,10 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Game from "../components/game"
 import shuffle from "shuffle-array"
-import { BRIGHT_PINK, YELLOW } from "../constants/styles"
+import { BRIGHT_PINK, YELLOW, BREAKPOINTS } from "../constants/styles"
 import { css } from "@emotion/core"
 
-
+const { SMALL, LARGE } = BREAKPOINTS;
 
 export default ({ data }) => {
   const {
@@ -15,18 +15,29 @@ export default ({ data }) => {
 
   return (
     <>
-      <h1 css={headingStyle}><span>{`Sonnet ${title}`}</span></h1>
+      <h1 css={headingStyle}><span css={headingTextSyle}>{`Sonnet ${title}`}</span></h1>
       <Game lines={randomisedLines} />
     </>
   )
 }
 
 const headingStyle = css`
+  text-align: center;  
   margin: 5px 0;
   color: ${BRIGHT_PINK};
-  & span {
-    background-color: ${YELLOW};
-    font-family: Carmen;
+`;
+  
+const headingTextSyle = css`
+  background-color: ${YELLOW};
+  font-family: Carmen;
+  font-size: 50px;
+
+  @media (min-width: ${SMALL}) {
+    font-size: 60px;
+  }
+
+  @media (min-width: ${LARGE}) {
+    font-size: 80px;
   }
 `;
 

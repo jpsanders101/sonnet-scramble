@@ -42,16 +42,13 @@ const headingContainerStyle = css`
   display: flex;
   flex-direction: column;
   width: 200px;
-  font-size: 25px;
 
   @media (min-width: ${SMALL}) {
     width: 250px;
-    font-size: 30px;
   }
 
   @media (min-width: ${LARGE}) {
     width: 325px;
-    font-size: 40px;
   }
 `;
 
@@ -81,6 +78,16 @@ const textContainerStyle = css`
 const headingTextStyle = css`
   background-color: ${YELLOW};
   font-family: Carmen;
+
+  font-size: 50px;
+
+  @media (min-width: ${SMALL}) {
+    font-size: 60px;
+  }
+
+  @media (min-width: ${LARGE}) {
+    font-size: 80px;
+  }
 `;
 
 const contentContainerOuterStyle = css`
