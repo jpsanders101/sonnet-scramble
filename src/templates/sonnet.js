@@ -23,11 +23,10 @@ export default ({ data }) => {
 
 const headingStyle = css`
   margin: 5px 0;
-  font-family: impact;
   color: ${BRIGHT_PINK};
   & span {
     background-color: ${YELLOW};
-    font-family: impact;
+    font-family: Carmen;
   }
 `;
 

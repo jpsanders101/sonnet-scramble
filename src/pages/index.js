@@ -56,7 +56,7 @@ const headingContainerStyle = css`
 
 const headingStyleCommon = `
   margin: 5px 0;
-  font-family: Requiem;
+  font-family: Carmen;
   color: ${BRIGHT_PINK};
 `;
 
@@ -79,7 +79,7 @@ const textContainerStyle = css`
 
 const headingTextStyle = css`
   background-color: ${YELLOW};
-  font-family: impact;
+  font-family: Carmen;
 `;
 
 const contentContainerOuterStyle = css`
@@ -144,7 +144,7 @@ margin: 0 auto;
   width: 50px;
   justify-content: space-evenly;
   align-items: center;
-  font-family: impact;
+  font-family: Carmen;
   border: solid 3px #FFFFFFFF;
 
   &:hover {
