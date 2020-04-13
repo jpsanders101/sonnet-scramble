@@ -56,7 +56,7 @@ const headingContainerStyle = css`
 
 const headingStyleCommon = `
   margin: 5px 0;
-  font-family: impact;
+  font-family: Requiem;
   color: ${BRIGHT_PINK};
 `;
 

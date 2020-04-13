@@ -5,3 +5,8 @@ body {
 * {
   font-family: Palatino, Georgia, serif;
 }
+
+@font-face {
+  font-family: Requiem;
+  src: url('/requiem_for_a.ttf');
+}
