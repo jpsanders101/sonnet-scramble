@@ -2,9 +2,15 @@ import React from "react"
 import { css } from "@emotion/core"
 import { BRIGHT_PINK, LIGHT_GREEN, COOL_BLUE, LILAC } from "../constants/styles"
 
-export default ({ line, isSelected, registerClick }) => {
+export default ({ line, isSelected, registerClick, tabIndex }) => {
   const handleOnClick = () => {
     registerClick(line)
+  }
+
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      registerClick(line);
+    }
   }
 
   const lineStyle = css`
@@ -65,7 +71,7 @@ export default ({ line, isSelected, registerClick }) => {
 `;
 
   return (
-    <p css={lineStyle} onClick={handleOnClick}>
+    <p css={lineStyle} onClick={handleOnClick} tabIndex={tabIndex} onKeyDown={handleKeyDown}>
       <span css={lineTextStyle}>{line.line && line.line.lineText}</span>
     </p>
   )

@@ -86,19 +86,20 @@ export default ({ lines, title }) => {
       <section css={puzzleSectionStyle}>
         <div css={solutionSectionContainerStyle}>
           <div css={solutionSectionStyle}>
-            {solvedLines.map(solvedLine => (
+            {solvedLines.map((solvedLine, index) => (
               <Line
                 key={`solved-${solvedLine.position}`}
                 line={solvedLine}
                 registerClick={registerClick}
                 isSelected={selectedLine === solvedLine}
                 setType="solution"
+                tabIndex={index + 1}
               />
             ))}
           </div>
         </div>
         <div css={scrambleSectionStyle}>
-          {scrambledLines.map(lineNode => (
+          {scrambledLines.map((lineNode, index) => (
             <Line
               key={`scrambled-${lineNode.position}`}
               setSelectedLine={setSelectedLine}
@@ -106,6 +107,7 @@ export default ({ lines, title }) => {
               isSelected={selectedLine === lineNode}
               registerClick={registerClick}
               setType="scramble"
+              tabIndex={index + 15}
             />
           ))}
         </div>
