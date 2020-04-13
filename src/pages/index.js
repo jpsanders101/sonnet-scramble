@@ -145,7 +145,7 @@ margin: 0 auto;
   justify-content: space-evenly;
   align-items: center;
   font-family: Carmen;
-  border: solid 3px #FFFFFFFF;
+  border: solid 3px #FFFFFF00;
 
   &:hover {
     border: solid 3px ${BRIGHT_PINK};
