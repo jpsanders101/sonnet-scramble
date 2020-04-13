@@ -16,7 +16,7 @@ export default ({ data }) => {
   return (
     <>
       <h1 css={headingStyle}><span css={headingTextSyle}>{`Sonnet ${title}`}</span></h1>
-      <Game lines={randomisedLines} />
+      <Game lines={randomisedLines} title={title} />
     </>
   )
 }
