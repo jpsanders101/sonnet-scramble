@@ -42,6 +42,10 @@ const Game = ({ lines, title }) => {
 
       setIsSonnetUnscrambled(isUnscrambled)
 
+      if (document && document.activeElement && document.activeElement.blur) {
+        document.activeElement.blur();
+      }
+
       setSelectedLine(null)
     } else {
       if (clickedLine.line) {
