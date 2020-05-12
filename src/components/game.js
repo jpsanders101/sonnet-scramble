@@ -7,19 +7,12 @@ import rightArrowSvg from "../../assets/arrow.svg"
 
 const { MEDIUM, SMALL, LARGE } = BREAKPOINTS;
 
-export default ({ lines, title }) => {
+const Game = ({ lines, title }) => {
   // TODO change name 'solved lines'
-  const initialSolutionLines = Array(14)
-    .fill({ setType: "solution", line: null })
-    .map((lineNode, index) => ({ ...lineNode, position: index }))
-  const [solvedLines, setSolvedLines] = useState(initialSolutionLines)
-
   const mappedScrambledLines = lines.map((line, index) => ({
     line,
     position: index,
-    setType: "scramble",
   }))
-
   const [scrambledLines, setScrambledLines] = useState(mappedScrambledLines)
 
   const [selectedLine, setSelectedLine] = useState(null)
@@ -30,30 +23,20 @@ export default ({ lines, title }) => {
 
   const registerClick = clickedLine => {
     if (selectedLine) {
-      const selectedLineContents = { ...selectedLine.line }
-      const clickedLineContents = { ...clickedLine.line }
+      const selectedLinePosition = selectedLine.position;
+      const clickedLinePosition = clickedLine.position;
 
-      const newSolvedLines = [...solvedLines]
-      const newScrambledLines = [...scrambledLines]
+      const shiftedLine = scrambledLines.splice(selectedLinePosition, 1);
+      const chunkOne = scrambledLines.slice(0, clickedLinePosition);
+      const chunkTwo = scrambledLines.slice(clickedLinePosition);
 
-      const mapping = {
-        solution: newSolvedLines,
-        scramble: newScrambledLines,
-      }
+      const newScrambledLines = [...chunkOne, ...shiftedLine, ...chunkTwo].map((line, index) => ({ ...line, position: index}));
 
-      mapping[selectedLine.setType][
-        selectedLine.position
-      ].line = clickedLineContents
-      mapping[clickedLine.setType][
-        clickedLine.position
-      ].line = selectedLineContents
-
-      setSolvedLines(newSolvedLines)
       setScrambledLines(newScrambledLines)
 
-      const isUnscrambled = newSolvedLines.every(lineNode => {
+      const isUnscrambled = newScrambledLines.every(lineNode => {
         return (
-          !!lineNode.line && lineNode.position + 1 === lineNode.line.lineNumber
+          lineNode.position + 1 === lineNode.line.lineNumber
         )
       })
 
@@ -86,9 +69,9 @@ export default ({ lines, title }) => {
       <section css={puzzleSectionStyle}>
         <div css={solutionSectionContainerStyle}>
           <div css={solutionSectionStyle}>
-            {solvedLines.map((solvedLine, index) => (
+            {scrambledLines.map((solvedLine, index) => (
               <Line
-                key={`solved-${solvedLine.position}`}
+                key={solvedLine.line.lineNumber}
                 line={solvedLine}
                 registerClick={registerClick}
                 isSelected={selectedLine === solvedLine}
@@ -97,19 +80,6 @@ export default ({ lines, title }) => {
               />
             ))}
           </div>
-        </div>
-        <div css={scrambleSectionStyle}>
-          {scrambledLines.map((lineNode, index) => (
-            <Line
-              key={`scrambled-${lineNode.position}`}
-              setSelectedLine={setSelectedLine}
-              line={lineNode}
-              isSelected={selectedLine === lineNode}
-              registerClick={registerClick}
-              setType="scramble"
-              tabIndex={index + 15}
-            />
-          ))}
         </div>
       </section>
     </div>
@@ -194,3 +164,5 @@ const solutionSectionStyle = css`
   border-radius: 10px;
   background-color: lightyellow;
 `;
+
+export default Game;
