@@ -8,7 +8,7 @@ import rightArrowSvg from "../../assets/arrow.svg"
 
 const { SMALL, LARGE } = BREAKPOINTS;
 
-export default () => (
+const IndexPage = () => (
   <Layout>
     <div css={backgroundContainerStyle}>
       <img css={shakespeareImgStyle} src={shakespeareSvg} alt="Shakespeare‘s head" />
@@ -159,3 +159,5 @@ margin: 0 auto;
     border: solid 3px ${BRIGHT_PINK};
   }
 `;
+
+export default IndexPage;

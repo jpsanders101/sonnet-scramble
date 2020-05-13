@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 
-export default ({ line, isSelected, registerClick, tabIndex }) => {
+ const Line = ({ line, isSelected, registerClick, tabIndex }) => {
   const handleOnClick = () => {
     registerClick(line)
   }
@@ -37,3 +37,5 @@ export default ({ line, isSelected, registerClick, tabIndex }) => {
     </div>
   )
 }
+
+export default Line;

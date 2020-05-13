@@ -8,7 +8,7 @@ import { css } from "@emotion/core"
 
 const { SMALL, LARGE } = BREAKPOINTS;
 
-export default ({ data }) => {
+const SonnetPage = ({ data }) => {
   const {
     sonnetsJson: { lines, title },
   } = data
@@ -20,7 +20,7 @@ export default ({ data }) => {
       <Game lines={randomisedLines} title={title} />
     </Layout>
   )
-}
+};
 
 const headingStyle = css`
   text-align: center;  
@@ -52,4 +52,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
+
+export default SonnetPage;

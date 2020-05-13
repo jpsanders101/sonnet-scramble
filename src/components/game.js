@@ -5,7 +5,7 @@ import Line from "./line"
 import { BREAKPOINTS, YELLOW, BRIGHT_PINK } from "../constants/styles"
 import rightArrowSvg from "../../assets/arrow.svg"
 
-const { MEDIUM, SMALL, LARGE } = BREAKPOINTS;
+const { SMALL, LARGE } = BREAKPOINTS;
 
 const Game = ({ lines, title }) => {
   const mappedScrambledLines = lines.map((line, index) => ({
@@ -67,19 +67,17 @@ const Game = ({ lines, title }) => {
         )}
       </h2>
       )}    
-      <section css={puzzleSectionStyle}>
-        <div css={solutionSectionContainerStyle}>
-          <div css={solutionSectionStyle}>
-            {scrambledLines.map((solvedLine, index) => (
-              <Line
-                key={solvedLine.lineNumber}
-                line={solvedLine}
-                registerClick={registerClick}
-                isSelected={selectedLine === solvedLine}
-                tabIndex={index + 1}
-              />
-            ))}
-          </div>
+      <section css={puzzleContainerStyle}>
+        <div css={puzzleStyle}>
+          {scrambledLines.map((solvedLine, index) => (
+            <Line
+              key={solvedLine.lineNumber}
+              line={solvedLine}
+              registerClick={registerClick}
+              isSelected={selectedLine === solvedLine}
+              tabIndex={index + 1}
+            />
+          ))}
         </div>
       </section>
     </div>
@@ -135,28 +133,14 @@ const correctMessageStyle = css`
   display: flex;
   justify-content: center;
   align-items: center;
-`
-
-const scrambleSectionStyle = css`
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
 `;
 
-const puzzleSectionStyle = css`
-  display: grid;
-  grid-template-columns: 1fr;
-  @media (min-width: ${MEDIUM}) {
-    grid-template-columns: 1fr 1fr;
-  }
-`;
-
-const solutionSectionContainerStyle = css`
+const puzzleContainerStyle = css`
   display: flex;
   justify-content: center;
 `;
 
-const solutionSectionStyle = css`
+const puzzleStyle = css`
   overflow: hidden;
   max-width: 500px;
   width: 100%;
