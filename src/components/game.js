@@ -71,6 +71,7 @@ const Game = ({ lines, title }) => {
         <div css={puzzleStyle}>
           {scrambledLines.map((solvedLine, index) => (
             <Line
+              someLineIsSelected={Boolean(selectedLine)}
               key={solvedLine.lineNumber}
               line={solvedLine}
               registerClick={registerClick}

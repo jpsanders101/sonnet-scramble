@@ -1,7 +1,8 @@
 import React from "react"
 import { css } from "@emotion/core"
+import { BRIGHT_PINK, YELLOW } from "../constants/styles"
 
- const Line = ({ line, isSelected, registerClick, tabIndex }) => {
+ const Line = ({ line, isSelected, registerClick, tabIndex, someLineIsSelected }) => {
   const handleOnClick = () => {
     registerClick(line)
   }
@@ -22,7 +23,17 @@ import { css } from "@emotion/core"
     border-bottom: lightgrey 2px solid;
     padding-left: 10px; 
     ${isSelected && `
-      border: solid 2px blue;
+      color: ${BRIGHT_PINK};
+      font-weight: 700;
+    `}
+    &:focus {
+      outline: none;
+      background-color: ${YELLOW};
+    }
+    ${someLineIsSelected && `
+      &:hover {
+        border-bottom: lightblue 2px solid;
+      }
     `}
   `
   const lineTextStyle = css`
