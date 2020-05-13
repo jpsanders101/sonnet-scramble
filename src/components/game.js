@@ -8,9 +8,8 @@ import rightArrowSvg from "../../assets/arrow.svg"
 const { MEDIUM, SMALL, LARGE } = BREAKPOINTS;
 
 const Game = ({ lines, title }) => {
-  // TODO change name 'solved lines'
   const mappedScrambledLines = lines.map((line, index) => ({
-    line,
+    ...line,
     position: index,
   }))
   const [scrambledLines, setScrambledLines] = useState(mappedScrambledLines)
@@ -36,7 +35,7 @@ const Game = ({ lines, title }) => {
 
       const isUnscrambled = newScrambledLines.every(lineNode => {
         return (
-          lineNode.position + 1 === lineNode.line.lineNumber
+          lineNode.position + 1 === lineNode.lineNumber
         )
       })
 
@@ -48,9 +47,7 @@ const Game = ({ lines, title }) => {
 
       setSelectedLine(null)
     } else {
-      if (clickedLine.line) {
-        setSelectedLine(clickedLine)
-      }
+      setSelectedLine(clickedLine)
     }
   }
 
@@ -75,7 +72,7 @@ const Game = ({ lines, title }) => {
           <div css={solutionSectionStyle}>
             {scrambledLines.map((solvedLine, index) => (
               <Line
-                key={solvedLine.line.lineNumber}
+                key={solvedLine.lineNumber}
                 line={solvedLine}
                 registerClick={registerClick}
                 isSelected={selectedLine === solvedLine}
