@@ -76,7 +76,6 @@ const Game = ({ lines, title }) => {
                 line={solvedLine}
                 registerClick={registerClick}
                 isSelected={selectedLine === solvedLine}
-                setType="solution"
                 tabIndex={index + 1}
               />
             ))}
