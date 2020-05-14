@@ -130,9 +130,6 @@ const textStyle = css`
   line-height: 1.25;
   & p {
     margin: 2em 0;
-    &:hover {
-      text-shadow: 2px 2px ${YELLOW};
-    }
   }
 `;
 
