@@ -28,14 +28,14 @@ import { BRIGHT_PINK, YELLOW } from "../constants/styles"
     `}
     &:focus {
       outline: none;
-      background-color: ${YELLOW};
+      border-bottom: lightblue 2px solid;
     }
     ${someLineIsSelected && `
       &:hover {
         border-bottom: lightblue 2px solid;
       }
     `}
-  `
+  `     
   const lineTextStyle = css`
     display: table-cell;
     font-size: 12px;
