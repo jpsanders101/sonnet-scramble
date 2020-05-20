@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import Line from "./line"
+import ShakespeareIcon from "./shakespeareIcon"
+import RightArrowIcon from "./rightArrowIcon"
 import { BREAKPOINTS, YELLOW, BRIGHT_PINK } from "../constants/styles"
 import rightArrowSvg from "../../assets/arrow.svg"
 
@@ -52,21 +54,7 @@ const Game = ({ lines, title }) => {
   }
 
   return (
-    <div>
-      {isSonnetUnscrambled && (
-      <h2 css={correctMessageStyle}>
-        <span css={correctMessageTextStyle}>
-          {`Correct!`}
-        </span>
-        {nextSonnet !== 155 && (
-          <Link css={linkStyle} to={`/${nextSonnet}`}>
-            <div css={linkContainerStyle}>
-              <img css={rightArrowStyle} src={rightArrowSvg} alt="Right arrow" />
-            </div>
-          </Link>
-        )}
-      </h2>
-      )}    
+    <div> 
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
           {scrambledLines.map((solvedLine, index) => (
@@ -80,31 +68,103 @@ const Game = ({ lines, title }) => {
             />
           ))}
         </div>
+        <div css={widgetPanelStyle}>
+            <button css={checkButtonStyle}>
+              {'Check'}
+            </button>
+            <div css={solvedTileStyle}>
+              <div>
+                {isSonnetUnscrambled ? (
+                  <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
+                    {"Unscrambled!"}
+                      {nextSonnet !== 155 && (
+                        <Link css={linkStyle} to={`/${nextSonnet}`}>
+                          <div css={unscrambledLinkContainerStyle}>
+                            <img css={rightArrowStyle} src={rightArrowSvg} alt="Right arrow" />
+                          </div>
+                        </Link>
+                      )}
+                  </div>
+                ) : (
+                  <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
+                    {"Scrambled..."}
+                    <div css={scrambledLinkContainerStyle}>
+                      <RightArrowIcon css={rightArrowStyle} />
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div css={shakespeareImgStyle}>
+                <ShakespeareIcon color={isSonnetUnscrambled ? BRIGHT_PINK: "grey"}/>
+              </div>
+            </div>
+        </div>
+        
       </section>
     </div>
   )
 }
 
-const rightArrowStyle = css`
-  height: 50px;
+const checkButtonStyle = css`
+  font-family: Carmen;
 `;
 
-const linkContainerStyle = css`
-margin: 0 auto;
+const solvedTileStyle = css`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+const shakespeareImgStyle = css`
+  width: 75px;
+`;
+
+const getSolvedStatusStyle = isSonnetUnscrambled => (
+  css`
+    font-family: Carmen;
+    font-size: 20px;
+    ${isSonnetUnscrambled ?
+      `color: hotpink;`:
+      `color: grey;`
+    }
+  `
+);
+
+const widgetPanelStyle = css`
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+`;
+
+const rightArrowStyle = css`
+  height: 30px;
+`;
+
+const sharedLinkContainerStyle = `
+  margin: 0 auto;
   width: 66%;
-  background: ${YELLOW};
   border-radius: 20px;
   display: flex;
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   justify-content: space-evenly;
   align-items: center;
   font-family: Carmen;
   border: solid 3px #FFFFFF00;
+`;
 
-  &:hover {
-    border: solid 3px ${BRIGHT_PINK};
-  }
+const scrambledLinkContainerStyle = css`
+    ${sharedLinkContainerStyle}
+    background: grey;
+`;
+
+const unscrambledLinkContainerStyle = css`
+    ${sharedLinkContainerStyle}
+    background: ${YELLOW};
+
+    &:hover {
+      border: solid 3px ${BRIGHT_PINK};
+    }
 `;
 
 const linkStyle = css`
@@ -137,15 +197,12 @@ const correctMessageStyle = css`
 `;
 
 const puzzleContainerStyle = css`
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
 `;
 
 const puzzleStyle = css`
   overflow: hidden;
-  max-width: 500px;
-  width: 100%;
-  margin: 10px;
   border-radius: 10px;
   background-color: lightyellow;
 `;
