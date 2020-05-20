@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { BRIGHT_PINK, YELLOW } from "../constants/styles"
+import { BRIGHT_PINK } from "../constants/styles"
 
  const Line = ({ line, isSelected, registerClick, tabIndex, someLineIsSelected }) => {
   const handleOnClick = () => {

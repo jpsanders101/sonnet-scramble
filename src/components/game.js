@@ -173,29 +173,6 @@ const linkStyle = css`
   font-size: 30px;
 `;
 
-const correctMessageTextStyle = css`
-  font-family: Carmen;
-  font-size: 50px;
-  margin-right: 20px;
-  text-decoration: underline;
-  @media (min-width: ${SMALL}) {
-    font-size: 60px;
-  }
-
-  @media (min-width: ${LARGE}) {
-    font-size: 80px;
-  }
-`;
-
-const correctMessageStyle = css`
-  font-family: Carmen;
-  text-align: center;
-  color: ${BRIGHT_PINK};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const puzzleContainerStyle = css`
   margin: 0 auto;
   max-width: 500px;
