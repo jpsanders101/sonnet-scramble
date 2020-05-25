@@ -4,10 +4,8 @@ import { css } from "@emotion/core"
 import Line from "./line"
 import ShakespeareIcon from "./shakespeareIcon"
 import RightArrowIcon from "./rightArrowIcon"
-import { BREAKPOINTS, YELLOW, BRIGHT_PINK } from "../constants/styles"
+import { YELLOW, BRIGHT_PINK } from "../constants/styles"
 import rightArrowSvg from "../../assets/arrow.svg"
-
-const { SMALL, LARGE } = BREAKPOINTS;
 
 const Game = ({ lines, title }) => {
   const mappedScrambledLines = lines.map((line, index) => ({
@@ -107,6 +105,18 @@ const Game = ({ lines, title }) => {
 
 const checkButtonStyle = css`
   font-family: Carmen;
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+  color: ${BRIGHT_PINK};
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+
+  &:focus {
+    border: 3px solid ${BRIGHT_PINK};
+    outline: none;
+  }
 `;
 
 const solvedTileStyle = css`
@@ -133,6 +143,7 @@ const getSolvedStatusStyle = isSonnetUnscrambled => (
 const widgetPanelStyle = css`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 10px;
 `;
 
