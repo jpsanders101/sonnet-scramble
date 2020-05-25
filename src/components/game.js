@@ -68,15 +68,15 @@ const Game = ({ lines, title }) => {
     <div>
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
-          {scrambledLines.map((solvedLine, index) => (
+          {scrambledLines.map((line, index) => (
             <Line
               someLineIsSelected={Boolean(selectedLine)}
-              key={solvedLine.lineNumber}
-              line={solvedLine}
+              key={line.lineNumber}
+              line={line}
               registerClick={registerClick}
-              isSelected={selectedLine === solvedLine}
+              isSelected={selectedLine === line}
               tabIndex={index + 1}
-              displayTick={shouldDisplayLineTick(solvedLine)}
+              displayTick={shouldDisplayLineTick(line)}
             />
           ))}
         </div>
@@ -165,7 +165,7 @@ const getSolvedStatusStyle = isSonnetUnscrambled =>
   css`
     font-family: Carmen;
     font-size: 20px;
-    ${isSonnetUnscrambled ? `color: hotpink;` : `color: grey;`}
+    ${isSonnetUnscrambled ? `color: ${BRIGHT_PINK};` : `color: grey;`}
   `
 
 const widgetPanelStyle = css`
