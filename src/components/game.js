@@ -125,7 +125,7 @@ const Game = ({ lines, title }) => {
 const checkButtonStyle = css`
   font-family: Carmen;
   height: 40px;
-  width: 60px;
+  min-width: 60px;
   font-size: 20px;
   color: ${BRIGHT_PINK};
   background-color: white;
