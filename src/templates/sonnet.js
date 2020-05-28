@@ -6,7 +6,7 @@ import shuffle from "shuffle-array"
 import { BRIGHT_PINK, YELLOW, BREAKPOINTS } from "../constants/styles"
 import { css } from "@emotion/core"
 
-const { SMALL, LARGE } = BREAKPOINTS;
+const { SMALL, LARGE } = BREAKPOINTS
 
 const SonnetPage = ({ data }) => {
   const {
@@ -16,18 +16,37 @@ const SonnetPage = ({ data }) => {
 
   return (
     <Layout>
-      <h1 css={headingStyle}><span css={headingTextSyle}>{`Sonnet ${title}`}</span></h1>
-      <Game lines={randomisedLines} title={title} />
+      <div css={containerStyle}>
+        <div css={headingContainerStyle}>
+          <h1 css={headingStyle}>
+            <span css={headingTextSyle}>{`Sonnet ${title}`}</span>
+          </h1>
+        </div>
+        <Game lines={randomisedLines} title={title} />
+      </div>
     </Layout>
   )
-};
+}
+
+const headingContainerStyle = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+const containerStyle = css`
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+`
 
 const headingStyle = css`
-  text-align: center;  
+  text-align: center;
   margin: 5px 0;
   color: ${BRIGHT_PINK};
-`;
-  
+`
+
 const headingTextSyle = css`
   background-color: ${YELLOW};
   font-family: Carmen;
@@ -40,7 +59,7 @@ const headingTextSyle = css`
   @media (min-width: ${LARGE}) {
     font-size: 80px;
   }
-`;
+`
 
 export const query = graphql`
   query($title: String!) {
@@ -52,6 +71,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default SonnetPage;
+export default SonnetPage
