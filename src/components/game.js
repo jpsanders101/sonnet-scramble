@@ -4,7 +4,9 @@ import { css } from "@emotion/core"
 import Line from "./line"
 import ShakespeareIcon from "./shakespeareIcon"
 import RightArrowIcon from "./rightArrowIcon"
-import { YELLOW, BRIGHT_PINK } from "../constants/styles"
+import { YELLOW, BRIGHT_PINK, BREAKPOINTS } from "../constants/styles"
+
+const { SMALL, LARGE } = BREAKPOINTS
 
 const Game = ({ lines, title }) => {
   const mappedScrambledLines = lines.map((line, index) => ({
@@ -65,23 +67,21 @@ const Game = ({ lines, title }) => {
 
   return (
     <>
-      <div>
-        <section css={puzzleContainerStyle}>
-          <div css={puzzleStyle}>
-            {scrambledLines.map((line, index) => (
-              <Line
-                someLineIsSelected={Boolean(selectedLine)}
-                key={line.lineNumber}
-                line={line}
-                registerClick={registerClick}
-                isSelected={selectedLine === line}
-                tabIndex={index + 1}
-                displayTick={shouldDisplayLineTick(line)}
-              />
-            ))}
-          </div>
-        </section>
-      </div>
+      <section css={puzzleContainerStyle}>
+        <div css={puzzleStyle}>
+          {scrambledLines.map((line, index) => (
+            <Line
+              someLineIsSelected={Boolean(selectedLine)}
+              key={line.lineNumber}
+              line={line}
+              registerClick={registerClick}
+              isSelected={selectedLine === line}
+              tabIndex={index + 1}
+              displayTick={shouldDisplayLineTick(line)}
+            />
+          ))}
+        </div>
+      </section>
       <div css={widgetPanelStyle}>
         <button css={checkButtonStyle} onClick={handleCheckButtonClick}>
           {"Check"}
@@ -205,9 +205,10 @@ const linkStyle = css`
 `
 
 const puzzleContainerStyle = css`
-  margin: 0 auto;
-  width: 66vw;
-  max-width: 500px;
+  @media (min-width: ${SMALL}) {
+    width: 66vw;
+    max-width: 500px;
+  }
 `
 
 const puzzleStyle = css`

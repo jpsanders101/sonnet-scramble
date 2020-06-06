@@ -39,8 +39,11 @@ const containerStyle = css`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
-  width: max-content;
-  margin: 0 auto;
+  margin: 0 1em;
+  @media (min-width: ${SMALL}) {
+    margin: 0 auto;
+    width: max-content;
+  }
 `
 
 const headingStyle = css`
