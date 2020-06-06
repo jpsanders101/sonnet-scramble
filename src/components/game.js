@@ -64,56 +64,58 @@ const Game = ({ lines, title }) => {
     (isCheckModeOn && line.position + 1 === line.lineNumber)
 
   return (
-    <div>
-      <section css={puzzleContainerStyle}>
-        <div css={puzzleStyle}>
-          {scrambledLines.map((line, index) => (
-            <Line
-              someLineIsSelected={Boolean(selectedLine)}
-              key={line.lineNumber}
-              line={line}
-              registerClick={registerClick}
-              isSelected={selectedLine === line}
-              tabIndex={index + 1}
-              displayTick={shouldDisplayLineTick(line)}
-            />
-          ))}
-        </div>
-        <div css={widgetPanelStyle}>
-          <button css={checkButtonStyle} onClick={handleCheckButtonClick}>
-            {"Check"}
-          </button>
-          <div css={solvedTileStyle}>
-            <div>
-              {isSonnetUnscrambled ? (
-                <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
-                  {"Unscrambled!"}
-                  {nextSonnet !== 155 && (
-                    <Link css={linkStyle} to={`/${nextSonnet}`}>
-                      <div css={unscrambledLinkContainerStyle}>
-                        <RightArrowIcon color={BRIGHT_PINK} />
-                      </div>
-                    </Link>
-                  )}
-                </div>
-              ) : (
-                <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
-                  {"Scrambled..."}
-                  <div css={scrambledLinkContainerStyle}>
-                    <RightArrowIcon />
-                  </div>
-                </div>
-              )}
-            </div>
-            <div css={shakespeareImgStyle}>
-              <ShakespeareIcon
-                color={isSonnetUnscrambled ? BRIGHT_PINK : "grey"}
+    <>
+      <div>
+        <section css={puzzleContainerStyle}>
+          <div css={puzzleStyle}>
+            {scrambledLines.map((line, index) => (
+              <Line
+                someLineIsSelected={Boolean(selectedLine)}
+                key={line.lineNumber}
+                line={line}
+                registerClick={registerClick}
+                isSelected={selectedLine === line}
+                tabIndex={index + 1}
+                displayTick={shouldDisplayLineTick(line)}
               />
-            </div>
+            ))}
+          </div>
+        </section>
+      </div>
+      <div css={widgetPanelStyle}>
+        <button css={checkButtonStyle} onClick={handleCheckButtonClick}>
+          {"Check"}
+        </button>
+        <div css={solvedTileStyle}>
+          <div>
+            {isSonnetUnscrambled ? (
+              <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
+                {"Unscrambled!"}
+                {nextSonnet !== 155 && (
+                  <Link css={linkStyle} to={`/${nextSonnet}`}>
+                    <div css={unscrambledLinkContainerStyle}>
+                      <RightArrowIcon color={BRIGHT_PINK} />
+                    </div>
+                  </Link>
+                )}
+              </div>
+            ) : (
+              <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
+                {"Scrambled..."}
+                <div css={scrambledLinkContainerStyle}>
+                  <RightArrowIcon />
+                </div>
+              </div>
+            )}
+          </div>
+          <div css={shakespeareImgStyle}>
+            <ShakespeareIcon
+              color={isSonnetUnscrambled ? BRIGHT_PINK : "grey"}
+            />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </>
   )
 }
 
@@ -204,6 +206,7 @@ const linkStyle = css`
 
 const puzzleContainerStyle = css`
   margin: 0 auto;
+  width: 66vw;
   max-width: 500px;
 `
 
