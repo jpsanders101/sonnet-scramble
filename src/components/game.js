@@ -5,7 +5,6 @@ import Line from "./line"
 import ShakespeareIcon from "./shakespeareIcon"
 import RightArrowIcon from "./rightArrowIcon"
 import { YELLOW, BRIGHT_PINK } from "../constants/styles"
-import rightArrowSvg from "../../assets/arrow.svg"
 
 const Game = ({ lines, title }) => {
   const mappedScrambledLines = lines.map((line, index) => ({
@@ -92,11 +91,7 @@ const Game = ({ lines, title }) => {
                   {nextSonnet !== 155 && (
                     <Link css={linkStyle} to={`/${nextSonnet}`}>
                       <div css={unscrambledLinkContainerStyle}>
-                        <img
-                          css={rightArrowStyle}
-                          src={rightArrowSvg}
-                          alt="Right arrow"
-                        />
+                        <RightArrowIcon color={BRIGHT_PINK} />
                       </div>
                     </Link>
                   )}
@@ -105,7 +100,7 @@ const Game = ({ lines, title }) => {
                 <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
                   {"Scrambled..."}
                   <div css={scrambledLinkContainerStyle}>
-                    <RightArrowIcon css={rightArrowStyle} />
+                    <RightArrowIcon />
                   </div>
                 </div>
               )}
@@ -175,13 +170,8 @@ const widgetPanelStyle = css`
   margin: 10px;
 `
 
-const rightArrowStyle = css`
-  height: 30px;
-`
-
 const sharedLinkContainerStyle = `
   margin: 0 auto;
-  width: 66%;
   border-radius: 20px;
   display: flex;
   height: 25px;
