@@ -3,7 +3,13 @@ import { graphql } from "gatsby"
 import Game from "../components/game"
 import Layout from "../components/layout"
 import shuffle from "shuffle-array"
-import { BRIGHT_PINK, YELLOW, BREAKPOINTS } from "../constants/styles"
+import {
+  BRIGHT_PINK,
+  COOL_PINK,
+  YELLOW,
+  BREAKPOINTS,
+  OFF_WHITE,
+} from "../constants/styles"
 import { css } from "@emotion/core"
 
 const { SMALL, LARGE } = BREAKPOINTS
@@ -49,11 +55,11 @@ const containerStyle = css`
 const headingStyle = css`
   text-align: center;
   margin: 5px 0;
-  color: ${BRIGHT_PINK};
+  color: ${OFF_WHITE};
 `
 
 const headingTextSyle = css`
-  background-color: ${YELLOW};
+  background-color: ${BRIGHT_PINK};
   font-family: Carmen;
   font-size: 50px;
 
