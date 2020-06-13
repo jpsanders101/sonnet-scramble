@@ -6,7 +6,7 @@ import ShakespeareIcon from "./shakespeareIcon"
 import RightArrowIcon from "./rightArrowIcon"
 import { YELLOW, BRIGHT_PINK, BREAKPOINTS } from "../constants/styles"
 
-const { SMALL, LARGE } = BREAKPOINTS
+const { SMALL } = BREAKPOINTS
 
 const Game = ({ lines, title }) => {
   const mappedScrambledLines = lines.map((line, index) => ({

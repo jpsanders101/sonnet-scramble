@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import { css } from "@emotion/core"
 import {
   BRIGHT_PINK,
-  YELLOW,
   BREAKPOINTS,
   COOL_PINK,
   OFF_WHITE,
