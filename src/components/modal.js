@@ -14,9 +14,11 @@ const Modal = ({ content, dismissHandler, showConfetti }) => (
       <img css={confettiStyle} src={"./confetti.gif"} alt="Confetti" />
     )}
     <div css={modalContentStyle}>
-      <button css={closeButtonStyle} onClick={dismissHandler}>
-        X
-      </button>
+      {dismissHandler && (
+        <button css={closeButtonStyle} onClick={dismissHandler}>
+          X
+        </button>
+      )}
       <div css={innerContentStyle}>{content}</div>
     </div>
   </div>
@@ -25,6 +27,7 @@ const Modal = ({ content, dismissHandler, showConfetti }) => (
 Modal.defaultProps = {
   content: "modal content",
   showConfetti: false,
+  dismissHandler: null,
 }
 
 const confettiStyle = css`

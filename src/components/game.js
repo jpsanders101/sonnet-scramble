@@ -97,6 +97,19 @@ const Game = ({ lines, title }) => {
     </div>
   )
 
+  const congratsModalContent = (
+    <div>
+      <h2>Congratulations! You’ve unscrambled the sonnet!</h2>
+      {nextSonnet !== 155 && (
+        <Link css={linkStyle} to={`/${nextSonnet}`}>
+          <div css={unscrambledLinkContainerStyle}>
+            <RightArrowIcon color={BRIGHT_PINK} />
+          </div>
+        </Link>
+      )}
+    </div>
+  )
+
   return (
     <>
       {showHelpModal && (
@@ -104,6 +117,9 @@ const Game = ({ lines, title }) => {
           dismissHandler={() => setShowHelpModal(false)}
           content={helpModalContent}
         />
+      )}
+      {isSonnetUnscrambled && (
+        <Modal content={congratsModalContent} showConfetti />
       )}
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
@@ -132,34 +148,6 @@ const Game = ({ lines, title }) => {
         >
           {"Help"}
         </button>
-        <div css={solvedTileStyle}>
-          <div>
-            {isSonnetUnscrambled ? (
-              <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
-                {"Unscrambled!"}
-                {nextSonnet !== 155 && (
-                  <Link css={linkStyle} to={`/${nextSonnet}`}>
-                    <div css={unscrambledLinkContainerStyle}>
-                      <RightArrowIcon color={BRIGHT_PINK} />
-                    </div>
-                  </Link>
-                )}
-              </div>
-            ) : (
-              <div css={getSolvedStatusStyle(isSonnetUnscrambled)}>
-                {"Scrambled..."}
-                <div css={scrambledLinkContainerStyle}>
-                  <RightArrowIcon />
-                </div>
-              </div>
-            )}
-          </div>
-          <div css={shakespeareImgStyle}>
-            <ShakespeareIcon
-              color={isSonnetUnscrambled ? BRIGHT_PINK : "grey"}
-            />
-          </div>
-        </div>
       </div>
     </>
   )
