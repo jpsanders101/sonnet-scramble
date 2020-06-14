@@ -12,3 +12,14 @@ export const BREAKPOINTS = {
   LARGE: "992px",
   EXTRA_LARGE: "1200px",
 }
+
+const mqFactory = breakpoint => style => `
+  @media (min-width: ${breakpoint}) {
+    ${style}
+  }
+`
+
+export const smallMq = mqFactory(BREAKPOINTS.SMALL)
+export const mediumMq = mqFactory(BREAKPOINTS.MEDIUM)
+export const largeMq = mqFactory(BREAKPOINTS.LARGE)
+export const extraLargeMq = mqFactory(BREAKPOINTS.EXTRA_LARGE)
