@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import shuffle from "shuffle-array"
 import { BRIGHT_PINK, BREAKPOINTS, OFF_WHITE } from "../constants/styles"
 import { css } from "@emotion/core"
+import Heading from "../components/heading"
 
 const { SMALL, LARGE } = BREAKPOINTS
 
@@ -18,9 +19,7 @@ const SonnetPage = ({ data }) => {
     <Layout>
       <div css={containerStyle}>
         <div css={headingContainerStyle}>
-          <h1 css={headingStyle}>
-            <span css={headingTextSyle}>{`Sonnet ${title}`}</span>
-          </h1>
+          <Heading text={`Sonnet ${title}`} />
         </div>
         <Game lines={randomisedLines} title={title} />
       </div>

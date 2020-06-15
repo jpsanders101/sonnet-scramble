@@ -3,9 +3,17 @@ import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import Line from "./line"
 import RightArrowIcon from "./rightArrowIcon"
-import { YELLOW, BRIGHT_PINK, BREAKPOINTS } from "../constants/styles"
+import {
+  YELLOW,
+  BRIGHT_PINK,
+  BREAKPOINTS,
+  COOL_PINK,
+  smallMq,
+  mediumMq,
+} from "../constants/styles"
 import Modal from "./modal"
 import PointingHandIcon from "./pointingHandIcon"
+import Heading from "./Heading"
 
 const { SMALL } = BREAKPOINTS
 
@@ -18,7 +26,7 @@ const Game = ({ lines, title }) => {
 
   const [selectedLine, setSelectedLine] = useState(null)
 
-  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(true)
+  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false)
 
   const [isCheckModeOn, setIsCheckModeOn] = useState(false)
 
@@ -97,13 +105,26 @@ const Game = ({ lines, title }) => {
     </div>
   )
 
+  const congratsModalContentStyle = css`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  `
+
   const congratsModalContent = (
-    <div>
-      <h2 css={congratulationsHeading}>Congratulations!</h2>
-      <h3 css={congratulationsHeading}>You’ve unscrambled the sonnet!</h3>
-      {scrambledLines.map(line => (
-        <p css={solvedLine}>{line.lineText}</p>
-      ))}
+    <div css={congratsModalContentStyle}>
+      <Heading
+        text="Congratulations!"
+        backgroundColour={COOL_PINK}
+        fontColour={"black"}
+      />
+      <div>
+        {scrambledLines.map(line => (
+          <p css={solvedLine}>{line.lineText}</p>
+        ))}
+      </div>
       {nextSonnet !== 155 && (
         <Link css={linkStyle} to={`/${nextSonnet}`}>
           <PointingHandIcon />
@@ -162,7 +183,19 @@ const congratulationsHeading = css`
   margin: 10px;
 `
 
+const congratulationsSubHeading = css`
+  text-align: center;
+  font-family: Carmen;
+  font-size: 20px;
+`
+
 const solvedLine = css`
+  font-size: 10px;
+
+  ${smallMq(`
+    font-size: 15px;
+  `)}
+
   margin: 0;
 `
 
