@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import Line from "./line"
-import ShakespeareIcon from "./shakespeareIcon"
 import RightArrowIcon from "./rightArrowIcon"
 import { YELLOW, BRIGHT_PINK, BREAKPOINTS } from "../constants/styles"
 import Modal from "./modal"
+import PointingHandIcon from "./pointingHandIcon"
 
 const { SMALL } = BREAKPOINTS
 
@@ -18,7 +18,7 @@ const Game = ({ lines, title }) => {
 
   const [selectedLine, setSelectedLine] = useState(null)
 
-  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false)
+  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(true)
 
   const [isCheckModeOn, setIsCheckModeOn] = useState(false)
 
@@ -99,12 +99,14 @@ const Game = ({ lines, title }) => {
 
   const congratsModalContent = (
     <div>
-      <h2>Congratulations! You’ve unscrambled the sonnet!</h2>
+      <h2 css={congratulationsHeading}>Congratulations!</h2>
+      <h3 css={congratulationsHeading}>You’ve unscrambled the sonnet!</h3>
+      {scrambledLines.map(line => (
+        <p css={solvedLine}>{line.lineText}</p>
+      ))}
       {nextSonnet !== 155 && (
         <Link css={linkStyle} to={`/${nextSonnet}`}>
-          <div css={unscrambledLinkContainerStyle}>
-            <RightArrowIcon color={BRIGHT_PINK} />
-          </div>
+          <PointingHandIcon />
         </Link>
       )}
     </div>
@@ -152,6 +154,17 @@ const Game = ({ lines, title }) => {
     </>
   )
 }
+
+const congratulationsHeading = css`
+  text-align: center;
+  font-family: Carmen;
+  font-size: 40px;
+  margin: 10px;
+`
+
+const solvedLine = css`
+  margin: 0;
+`
 
 const checkButtonStyle = css`
   font-family: Carmen;
@@ -223,19 +236,10 @@ const scrambledLinkContainerStyle = css`
   background: grey;
 `
 
-const unscrambledLinkContainerStyle = css`
-    ${sharedLinkContainerStyle}
-    background: ${YELLOW};
-
-    &:hover {
-      border: solid 3px ${BRIGHT_PINK};
-    }
-`
-
 const linkStyle = css`
-  color: ${BRIGHT_PINK};
-  text-decoration: none;
-  font-size: 30px;
+  display: block;
+  width: 200px;
+  margin: 30px auto;
 `
 
 const puzzleContainerStyle = css`
