@@ -11,6 +11,7 @@ import {
 import Modal from "./modal"
 import PointingHandIcon from "./pointingHandIcon"
 import Heading from "./heading"
+import ShakespeareIcon from "./shakespeareIcon"
 
 const { SMALL } = BREAKPOINTS
 
@@ -143,6 +144,15 @@ const Game = ({ lines, title }) => {
       )}
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
+          <ShakespeareIcon
+            cssProp={css`
+              position: absolute;
+              bottom: 0;
+              right: -90px;
+              height: 60%;
+            `}
+            color={`${BRIGHT_PINK}40`}
+          />
           {scrambledLines.map((line, index) => (
             <Line
               someLineIsSelected={Boolean(selectedLine)}
@@ -172,19 +182,6 @@ const Game = ({ lines, title }) => {
     </>
   )
 }
-
-const congratulationsHeading = css`
-  text-align: center;
-  font-family: Carmen;
-  font-size: 40px;
-  margin: 10px;
-`
-
-const congratulationsSubHeading = css`
-  text-align: center;
-  font-family: Carmen;
-  font-size: 20px;
-`
 
 const solvedLine = css`
   font-size: 10px;
@@ -225,45 +222,11 @@ const checkButtonStyle = css`
   }
 `
 
-const solvedTileStyle = css`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`
-
-const shakespeareImgStyle = css`
-  width: 75px;
-`
-
-const getSolvedStatusStyle = isSonnetUnscrambled =>
-  css`
-    font-family: Carmen;
-    font-size: 20px;
-    ${isSonnetUnscrambled ? `color: ${BRIGHT_PINK};` : `color: grey;`}
-  `
-
 const widgetPanelStyle = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-`
-
-const sharedLinkContainerStyle = `
-  margin: 0 auto;
-  border-radius: 20px;
-  display: flex;
-  height: 25px;
-  width: 25px;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: Carmen;
-  border: solid 3px #FFFFFF00;
-`
-
-const scrambledLinkContainerStyle = css`
-  ${sharedLinkContainerStyle}
-  background: grey;
 `
 
 const linkStyle = css`
@@ -283,6 +246,7 @@ const puzzleStyle = css`
   overflow: hidden;
   border-radius: 10px;
   background-color: lightyellow;
+  position: relative;
 `
 
 export default Game

@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 import Game from "../components/game"
 import Layout from "../components/layout"
 import shuffle from "shuffle-array"
-import { BRIGHT_PINK, BREAKPOINTS, OFF_WHITE } from "../constants/styles"
+import { BREAKPOINTS } from "../constants/styles"
 import { css } from "@emotion/core"
 import Heading from "../components/heading"
 
-const { SMALL, LARGE } = BREAKPOINTS
+const { SMALL } = BREAKPOINTS
 
 const SonnetPage = ({ data }) => {
   const {
