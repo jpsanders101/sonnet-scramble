@@ -2,18 +2,15 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import Line from "./line"
-import RightArrowIcon from "./rightArrowIcon"
 import {
-  YELLOW,
   BRIGHT_PINK,
   BREAKPOINTS,
   COOL_PINK,
   smallMq,
-  mediumMq,
 } from "../constants/styles"
 import Modal from "./modal"
 import PointingHandIcon from "./pointingHandIcon"
-import Heading from "./Heading"
+import Heading from "./heading"
 
 const { SMALL } = BREAKPOINTS
 

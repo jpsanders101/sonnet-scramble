@@ -45,26 +45,6 @@ const containerStyle = css`
   }
 `
 
-const headingStyle = css`
-  text-align: center;
-  margin: 5px 0;
-  color: ${OFF_WHITE};
-`
-
-const headingTextSyle = css`
-  background-color: ${BRIGHT_PINK};
-  font-family: Carmen;
-  font-size: 50px;
-
-  @media (min-width: ${SMALL}) {
-    font-size: 60px;
-  }
-
-  @media (min-width: ${LARGE}) {
-    font-size: 80px;
-  }
-`
-
 export const query = graphql`
   query($title: String!) {
     sonnetsJson(title: { eq: $title }) {

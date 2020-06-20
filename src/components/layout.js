@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import { css } from "@emotion/core"
-import "../../assets/global.css";
+import "../../assets/global.css"
 
 const Layout = ({ children }) => <main css={layoutStyle}>{children}</main>
 
@@ -9,6 +9,6 @@ const layoutStyle = css`
   & * {
     font-family: Palatino, Georgia, serif;
   }
-`;
+`
 
-export default Layout;
+export default Layout
