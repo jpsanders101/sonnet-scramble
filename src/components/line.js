@@ -34,6 +34,7 @@ const Line = ({
       `
       color: ${BRIGHT_PINK};
       font-weight: 700;
+      padding-left: 20px;
     `}
     &:focus {
       outline: none;
