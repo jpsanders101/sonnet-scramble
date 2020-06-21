@@ -25,22 +25,24 @@ const congratsModalContent = ({ scrambledLines, nextSonnet }) => (
   </div>
 )
 
-export default congratsModalContent
-
 const linkStyle = css`
   display: block;
-  width: 200px;
-  margin: 30px auto;
+  width: 150px;
+  margin: 0 auto;
 `
 
 const solvedLine = css`
   font-size: 10px;
 
   ${smallMq(`
-    font-size: 15px;
+    font-size: 12px;
   `)}
 
   margin: 0;
+  &:nth-child(13),
+  &:nth-child(14) {
+    padding-left: 10px;
+  }
 `
 const congratsModalContentStyle = css`
   height: 100%;
@@ -49,3 +51,4 @@ const congratsModalContentStyle = css`
   align-items: center;
   justify-content: space-between;
 `
+export default congratsModalContent
