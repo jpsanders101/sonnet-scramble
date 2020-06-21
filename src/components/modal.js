@@ -10,16 +10,14 @@ import {
 
 const Modal = ({ content, dismissHandler, showConfetti }) => (
   <div css={modalContainerStyle}>
-    {showConfetti && (
-      <img css={confettiStyle} src={"./confetti.gif"} alt="Confetti" />
-    )}
+    {showConfetti && <img css={confettiStyle} src={"./confetti.gif"} alt="" />}
     <div css={modalContentStyle}>
       {dismissHandler && (
         <button css={closeButtonStyle} onClick={dismissHandler}>
           X
         </button>
       )}
-      <div css={innerContentStyle}>{content()}</div>
+      <div css={innerContentStyle}>{content}</div>
     </div>
   </div>
 )

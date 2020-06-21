@@ -1,19 +1,13 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import Line from "./line"
-import {
-  BRIGHT_PINK,
-  BREAKPOINTS,
-  COOL_PINK,
-  smallMq,
-} from "../constants/styles"
+import { BRIGHT_PINK, BREAKPOINTS } from "../constants/styles"
 import Modal from "./modal"
-import PointingHandIcon from "./pointingHandIcon"
-import Heading from "./heading"
+
 import ShakespeareIcon from "./shakespeareIcon"
 import Button from "./button"
 import HelpModalContent from "./helpModalContent"
+import CongratsModalContent from "./congratulationsModalContent"
 
 const { SMALL } = BREAKPOINTS
 
@@ -76,44 +70,24 @@ const Game = ({ lines, title }) => {
     isSonnetUnscrambled ||
     (isCheckModeOn && line.position + 1 === line.lineNumber)
 
-  const congratsModalContentStyle = css`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  `
-
-  const congratsModalContent = (
-    <div css={congratsModalContentStyle}>
-      <Heading
-        text="Congratulations!"
-        backgroundColour={COOL_PINK}
-        fontColour={"black"}
-      />
-      <div>
-        {scrambledLines.map(line => (
-          <p css={solvedLine}>{line.lineText}</p>
-        ))}
-      </div>
-      {nextSonnet !== 155 && (
-        <Link css={linkStyle} to={`/${nextSonnet}`}>
-          <PointingHandIcon />
-        </Link>
-      )}
-    </div>
-  )
-
   return (
     <>
       {showHelpModal && (
         <Modal
           dismissHandler={() => setShowHelpModal(false)}
-          content={HelpModalContent}
+          content={<HelpModalContent />}
         />
       )}
       {isSonnetUnscrambled && (
-        <Modal content={congratsModalContent} showConfetti />
+        <Modal
+          content={
+            <CongratsModalContent
+              scrambledLines={scrambledLines}
+              nextSonnet={nextSonnet}
+            />
+          }
+          showConfetti
+        />
       )}
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
@@ -147,27 +121,11 @@ const Game = ({ lines, title }) => {
   )
 }
 
-const solvedLine = css`
-  font-size: 10px;
-
-  ${smallMq(`
-    font-size: 15px;
-  `)}
-
-  margin: 0;
-`
-
 const widgetPanelStyle = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-`
-
-const linkStyle = css`
-  display: block;
-  width: 200px;
-  margin: 30px auto;
 `
 
 const puzzleContainerStyle = css`
