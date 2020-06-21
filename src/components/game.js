@@ -13,6 +13,7 @@ import PointingHandIcon from "./pointingHandIcon"
 import Heading from "./heading"
 import ShakespeareIcon from "./shakespeareIcon"
 import Button from "./button"
+import HelpModalContent from "./helpModalContent"
 
 const { SMALL } = BREAKPOINTS
 
@@ -75,35 +76,6 @@ const Game = ({ lines, title }) => {
     isSonnetUnscrambled ||
     (isCheckModeOn && line.position + 1 === line.lineNumber)
 
-  const helpModalContent = (
-    <div>
-      <p>
-        Sonnets are poems with 14 lines. Shakespeare's Sonnets follow a regular
-        rhyme scheme. Here’s an example of a sonnet embedded in the dialogue of
-        the play Romeo and Juliet to illustrate how the rhyme scheme works:
-      </p>
-      <p>
-        “If I profane with my unworthiest hand A<br /> This holy shrine, the
-        gentle sin is this: B<br /> My lips, two blushing pilgrims, ready stand
-        A<br /> To smooth that rough touch with a tender kiss.” B<br />
-        “Good pilgrim, you do wrong your hand too much, C<br /> Which mannerly
-        devotion shows in this; D<br /> For saints have hands that pilgrims'
-        hands do touch, C<br /> And palm to palm is holy palmers' kiss.” D<br />
-        “Have not saints lips, and holy palmers too?” E<br />
-        ”Ay, pilgrim, lips that they must use in prayer. F<br />
-        “O, then, dear saint, let lips do what hands do; E<br /> They pray —
-        grant thou, lest faith turn to despair.” F<br />
-        “Saints do not move, though grant for prayers' sake.” G<br />
-        “Then move not, while my prayer's effect I take.” G<br />
-      </p>
-      <p>
-        To unscramble a sonnet, click on one line to select it, then click on
-        another line to move it to a new space. All lines beneath this will
-        shuffle down.
-      </p>
-    </div>
-  )
-
   const congratsModalContentStyle = css`
     height: 100%;
     display: flex;
@@ -137,7 +109,7 @@ const Game = ({ lines, title }) => {
       {showHelpModal && (
         <Modal
           dismissHandler={() => setShowHelpModal(false)}
-          content={helpModalContent}
+          content={HelpModalContent}
         />
       )}
       {isSonnetUnscrambled && (

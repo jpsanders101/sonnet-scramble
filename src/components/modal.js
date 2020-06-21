@@ -19,7 +19,7 @@ const Modal = ({ content, dismissHandler, showConfetti }) => (
           X
         </button>
       )}
-      <div css={innerContentStyle}>{content}</div>
+      <div css={innerContentStyle}>{content()}</div>
     </div>
   </div>
 )
