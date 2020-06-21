@@ -24,14 +24,14 @@ const IndexPage = () => (
     </div>
     <div css={contentContainerOuterStyle}>
       <div css={contentContainerInnerStyle}>
-        <div css={headingContainerStyle}>
-          <h1 css={headingStyleOne}>
+        <h1 css={headingContainerStyle}>
+          <div css={headingStyleOne}>
             <span css={headingTextStyle}>{`Sonnet`}</span>
-          </h1>
-          <h1 css={headingStyleTwo}>
+          </div>
+          <div css={headingStyleTwo}>
             <span css={headingTextStyleTwo}>{`Scramble`}</span>
-          </h1>
-        </div>
+          </div>
+        </h1>
         <div css={textContainerStyle}>
           <div css={textStyle}>
             <p>{`At several times during Shakespeare’s career, the London theatres which were his main livelihood were closed due to outbreaks of the plague.`}</p>

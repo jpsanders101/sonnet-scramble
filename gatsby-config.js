@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sonnet Scramble`,
+    description: `Can you unscramble all 154 of Shakespeare's sonnets?`,
   },
   plugins: [
     `gatsby-transformer-json`,
