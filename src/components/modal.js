@@ -73,7 +73,7 @@ const modalContentStyle = css`
   border-radius: 10px;
   height: 66vh;
   width: 80vw;
-
+  box-shadow: 5px 5px 5px grey;
 
   ${smallMq(`
     width: 70vw;
