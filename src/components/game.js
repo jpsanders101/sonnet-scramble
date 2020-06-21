@@ -12,6 +12,7 @@ import Modal from "./modal"
 import PointingHandIcon from "./pointingHandIcon"
 import Heading from "./heading"
 import ShakespeareIcon from "./shakespeareIcon"
+import Button from "./button"
 
 const { SMALL } = BREAKPOINTS
 
@@ -167,17 +168,8 @@ const Game = ({ lines, title }) => {
         </div>
       </section>
       <div css={widgetPanelStyle}>
-        <button css={checkButtonStyle} onClick={handleCheckButtonClick}>
-          {"Check"}
-        </button>
-        <button
-          css={checkButtonStyle}
-          onClick={() => {
-            setShowHelpModal(true)
-          }}
-        >
-          {"Help"}
-        </button>
+        <Button onClick={handleCheckButtonClick} text="Check" />
+        <Button onClick={() => setShowHelpModal(true)} text="Help" />
       </div>
     </>
   )
@@ -191,35 +183,6 @@ const solvedLine = css`
   `)}
 
   margin: 0;
-`
-
-const checkButtonStyle = css`
-  font-family: Carmen;
-  height: 40px;
-  min-width: 60px;
-  font-size: 20px;
-  color: ${BRIGHT_PINK};
-  background-color: white;
-  border-radius: 10px;
-  border: 3px solid lightgrey;
-  position: relative;
-
-  &:active {
-    border: 3px solid ${BRIGHT_PINK};
-  }
-
-  &:focus {
-    outline: none;
-    &:after {
-      content: " ";
-      height: 10px;
-      width: 54px;
-      border-bottom: 4px solid lightblue;
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-    }
-  }
 `
 
 const widgetPanelStyle = css`
