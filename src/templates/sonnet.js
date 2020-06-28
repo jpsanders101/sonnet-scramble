@@ -35,6 +35,7 @@ const headingContainerStyle = css`
 
 const containerStyle = css`
   height: 100vh;
+  max-height: 800px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;

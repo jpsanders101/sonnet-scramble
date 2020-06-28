@@ -9,6 +9,11 @@ const layoutStyle = css`
   & * {
     font-family: Palatino, Georgia, serif;
   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
 `
 
 export default Layout
