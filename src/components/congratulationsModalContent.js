@@ -29,6 +29,19 @@ const linkStyle = css`
   display: block;
   width: 150px;
   margin: 0 auto;
+
+  &:focus {
+    outline: none;
+    &:after {
+      content: " ";
+      height: 10px;
+      width: calc(100% + 3px);
+      border-bottom: 4px solid lightblue;
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+    }
+  }
 `
 
 const solvedLine = css`

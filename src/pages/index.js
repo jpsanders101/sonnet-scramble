@@ -52,6 +52,7 @@ const handContainerStyle = css`
   display: block;
   width: 200px;
   margin: 4em auto 0;
+  position: relative;
 
   & svg {
     fill: black;
@@ -60,6 +61,19 @@ const handContainerStyle = css`
 
   & svg:hover {
     fill: ${BRIGHT_PINK};
+  }
+
+  &:focus {
+    outline: none;
+    &:after {
+      content: " ";
+      height: 10px;
+      width: calc(100% + 3px);
+      border-bottom: 4px solid lightblue;
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+    }
   }
 `
 const headingContainerStyle = css`
