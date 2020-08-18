@@ -40,6 +40,11 @@ const innerContentStyle = css`
   padding: 2em;
   overflow-y: scroll;
   height: calc(100% - 4em);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 `
 const closeButtonStyle = css`
   font-family: Carmen;
@@ -69,7 +74,7 @@ const modalContainerStyle = css`
 const modalContentStyle = css`
   position: relative;
   border-radius: 10px;
-  height: 66vh;
+  max-height: 66vh;
   width: 80vw;
   box-shadow: 5px 5px 5px grey;
 

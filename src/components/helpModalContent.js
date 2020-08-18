@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 import { smallMq } from "../constants/styles"
 
 const HelpModalContent = () => (
-  <div>
+  <div css={helpContent}>
     <p>
       Sonnets are poems with 14 lines. Shakespeare's Sonnets follow a regular
       scheme of rhythm and rhyme. Here’s an example of a sonnet embedded in the
@@ -67,6 +67,10 @@ const HelpModalContent = () => (
   </div>
 )
 
+const helpContent = css`
+  font-size: 10px;
+`
+
 const emphStyle = css`
   font-style: italic;
 `
@@ -124,7 +128,6 @@ const sonnetStyle = css`
   margin-left: 5px;
   font-family: Carmen;
   font-size: 12px;
-  overflow-y: scroll;
   width: 100%;
   ${smallMq(`
     margin-left: 15px;
