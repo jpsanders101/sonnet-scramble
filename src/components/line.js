@@ -75,6 +75,7 @@ const Line = ({
 const tickStyle = css`
   display: table-cell;
   vertical-align: middle;
+  padding-right: 5px;
   & svg {
     vertical-align: middle;
     display: table-cell;
