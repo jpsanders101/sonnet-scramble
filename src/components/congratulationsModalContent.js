@@ -59,6 +59,7 @@ const solvedLine = css`
 `
 const congratsModalContentStyle = css`
   height: 100%;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
