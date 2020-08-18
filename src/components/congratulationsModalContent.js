@@ -11,6 +11,7 @@ const congratsModalContent = ({ scrambledLines, nextSonnet }) => (
       text="Congratulations!"
       backgroundColour={COOL_PINK}
       fontColour={"black"}
+      fontSize={"30px"}
     />
     <div>
       {scrambledLines.map(line => (
@@ -59,7 +60,7 @@ const solvedLine = css`
 `
 const congratsModalContentStyle = css`
   height: 100%;
-  min-height: 350px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

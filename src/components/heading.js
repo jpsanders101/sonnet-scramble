@@ -4,13 +4,13 @@ import { BRIGHT_PINK, BREAKPOINTS, OFF_WHITE } from "../constants/styles"
 
 const { SMALL, LARGE } = BREAKPOINTS
 
-const Heading = ({ text, backgroundColour, fontColour, size }) => {
+const Heading = ({ text, backgroundColour, fontColour, size, fontSize }) => {
   const config = sizeMapping[size]
   const HeadingTag = config.elem
 
   return (
     <HeadingTag cssProp={headingStyle(fontColour)}>
-      <span css={headingTextSyle(backgroundColour, config.fontSizes)}>
+      <span css={headingTextSyle(backgroundColour, config.fontSizes, fontSize)}>
         {text}
       </span>
     </HeadingTag>
@@ -43,16 +43,16 @@ const headingStyle = fontColour => css`
   color: ${fontColour};
 `
 
-const headingTextSyle = (backgroundColour, fontSizes) => css`
+const headingTextSyle = (backgroundColour, fontSizes, fontSize) => css`
   background-color: ${backgroundColour};
   font-family: Carmen;
-  font-size: ${fontSizes[0]};
+  font-size: ${fontSize || fontSizes[0]};
 
   @media (min-width: ${SMALL}) {
-    font-size: ${fontSizes[1]};
+    font-size: ${fontSize || fontSizes[1]};
   }
 
   @media (min-width: ${LARGE}) {
-    font-size: ${fontSizes[2]};
+    font-size: ${fontSize || fontSizes[2]};
   }
 `
