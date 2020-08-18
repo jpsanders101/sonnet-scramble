@@ -54,15 +54,6 @@ const handContainerStyle = css`
   margin: 4em auto 0;
   position: relative;
 
-  & svg {
-    fill: black;
-    transition: fill 0.25s;
-  }
-
-  & svg:hover {
-    fill: ${BRIGHT_PINK};
-  }
-
   &:focus {
     outline: none;
     &:after {

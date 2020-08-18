@@ -1,7 +1,18 @@
 import React from "react"
+import { css } from "@emotion/core"
+import { BRIGHT_PINK } from "../constants/styles"
+
+const handStyle = css`
+  fill: black;
+  transition: fill 0.25s;
+
+  &:hover {
+    fill: ${BRIGHT_PINK};
+  }
+`
 
 const PointingHandIcon = () => (
-  <svg id="svg5111" viewBox="0 0 188.68 95.754" version="1.1">
+  <svg css={handStyle} id="svg5111" viewBox="0 0 188.68 95.754" version="1.1">
     <g id="layer1" transform="translate(-33.714 -153.13)">
       <path
         id="path5130"

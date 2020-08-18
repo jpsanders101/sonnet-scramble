@@ -20,7 +20,7 @@ const Game = ({ lines, title }) => {
 
   const [selectedLine, setSelectedLine] = useState(null)
 
-  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(true)
+  const [isSonnetUnscrambled, setIsSonnetUnscrambled] = useState(false)
 
   const [isCheckModeOn, setIsCheckModeOn] = useState(false)
 
