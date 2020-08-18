@@ -91,15 +91,6 @@ const Game = ({ lines, title }) => {
       )}
       <section css={puzzleContainerStyle}>
         <div css={puzzleStyle}>
-          <ShakespeareIcon
-            cssProp={css`
-              position: absolute;
-              bottom: 0;
-              right: -90px;
-              height: 60%;
-            `}
-            color={`${BRIGHT_PINK}40`}
-          />
           {scrambledLines.map((line, index) => (
             <Line
               someLineIsSelected={Boolean(selectedLine)}
@@ -111,6 +102,16 @@ const Game = ({ lines, title }) => {
               displayTick={shouldDisplayLineTick(line)}
             />
           ))}
+          <ShakespeareIcon
+            cssProp={css`
+              pointer-events: none;
+              position: absolute;
+              bottom: 0;
+              right: -90px;
+              height: 60%;
+            `}
+            color={`${BRIGHT_PINK}40`}
+          />
         </div>
       </section>
       <div css={widgetPanelStyle}>
